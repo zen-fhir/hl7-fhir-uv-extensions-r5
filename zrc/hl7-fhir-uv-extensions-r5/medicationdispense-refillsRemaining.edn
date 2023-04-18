@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.medicationdispense-refillsRemaining,
+ import #{zen.fhir hl7-fhir-r5-core.integer},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "The number of refills allowed or remaining after a dispensing event.  Does not include the current dispense.",
+         :zen.fhir/type "integer",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/medicationdispense-refillsRemaining",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.integer/schema}}}

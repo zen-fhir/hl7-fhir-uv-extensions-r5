@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.concept-bidirectional,
+ import #{hl7-fhir-r5-core.boolean zen.fhir},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "Set to true if the concept map can be safely intepreted in reversse.",
+         :zen.fhir/type "boolean",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/concept-bidirectional",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.boolean/schema}}}

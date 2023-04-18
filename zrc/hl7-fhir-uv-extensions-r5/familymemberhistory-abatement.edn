@@ -1,0 +1,15 @@
+{ns hl7-fhir-uv-extensions-r5.familymemberhistory-abatement,
+ import #{hl7-fhir-r5-core.Age
+          hl7-fhir-r5-core.boolean
+          zen.fhir
+          hl7-fhir-r5-core.date},
+ schema {:fhir/polymorphic true,
+         :zen.fhir/version "0.6.21-2",
+         :zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/familymemberhistory-abatement",
+         :type zen/map,
+         :zen/desc "The approximate date, age, or flag indicating that the condition of the family member resolved. The abatement should only be specified if the condition is stated in the positive sense, i.e., the didNotHave flag is false.",
+         :keys {:date {:confirms #{hl7-fhir-r5-core.date/schema}},
+                :Age {:confirms #{hl7-fhir-r5-core.Age/schema}},
+                :boolean {:confirms #{hl7-fhir-r5-core.boolean/schema}}},
+         :exclusive-keys #{#{:date :boolean :Age}}}}

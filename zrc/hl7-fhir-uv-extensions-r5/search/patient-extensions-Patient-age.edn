@@ -1,0 +1,32 @@
+{ns hl7-fhir-uv-extensions-r5.search.patient-extensions-Patient-age,
+ import #{zen.fhir},
+ search {:zen/tags #{zen.fhir/search},
+         :fhir/id "patient-extensions-Patient-age",
+         :fhir/url "http://hl7.org/fhir/SearchParameter/patient-extensions-Patient-age",
+         :fhir/type "number",
+         :name "age",
+         :expr {:Patient {:knife [["birthDate"]],
+                          :jsonpath ["$.\"birthDate\"[*]"],
+                          :data-types #{{:type "date",
+                                         :polymorphic? false}},
+                          :template :number,
+                          :sql {:where [:or
+                                        [:and
+                                         [:>=
+                                          [:pg/call
+                                           :jsonpath_extract_max_numeric
+                                           [:pg/sql
+                                            "{{table}}.resource"]
+                                           "$.\"birthDate\"[*]"]
+                                          [:pg/cast
+                                           [:pg/sql "{{param}}"]
+                                           :numeric]]
+                                         [:<=
+                                          [:pg/call
+                                           :jsonpath_extract_min_numeric
+                                           [:pg/sql
+                                            "{{table}}.resource"]
+                                           "$.\"birthDate\"[*]"]
+                                          [:pg/cast
+                                           [:pg/sql "{{param}}"]
+                                           :numeric]]]]}}}}}

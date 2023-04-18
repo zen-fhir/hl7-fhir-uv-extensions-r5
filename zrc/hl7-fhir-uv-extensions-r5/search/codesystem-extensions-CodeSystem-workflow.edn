@@ -1,0 +1,12 @@
+{ns hl7-fhir-uv-extensions-r5.search.codesystem-extensions-CodeSystem-workflow,
+ import #{zen.fhir},
+ search {:zen/tags #{zen.fhir/search},
+         :fhir/id "codesystem-extensions-CodeSystem-workflow",
+         :fhir/url "http://hl7.org/fhir/SearchParameter/codesystem-extensions-CodeSystem-workflow",
+         :fhir/type "token",
+         :name "workflow",
+         :expr {:CodeSystem {:knife [["extension('http://hl7.org/fhir/StructureDefinition/codesystem-workflowStatus'"
+                                      "value"]],
+                             :jsonpath ["$.\"extension('http://hl7.org/fhir/StructureDefinition/codesystem-workflowStatus'\".\"value\"[*]"],
+                             :data-types #{},
+                             :template :token}}}}

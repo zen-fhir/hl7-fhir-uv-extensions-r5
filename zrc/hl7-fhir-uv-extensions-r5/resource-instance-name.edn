@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.resource-instance-name,
+ import #{zen.fhir hl7-fhir-r5-core.string},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "A natural language name for non-conformance and non-terminology resource instances that is represented in the resource for publication use.",
+         :zen.fhir/type "string",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/resource-instance-name",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.string/schema}}}

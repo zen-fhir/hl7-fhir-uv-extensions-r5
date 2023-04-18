@@ -1,0 +1,20 @@
+{ns hl7-fhir-uv-extensions-r5.individual-genderIdentity,
+ import #{hl7-fhir-uv-extensions-r5.value-set.gender-identity
+          zen.fhir
+          hl7-fhir-r5-core.CodeableConcept
+          hl7-fhir-r5-core.string
+          hl7-fhir-r5-core.Period},
+ schema {:zen.fhir/version "0.6.21-2",
+         :zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/individual-genderIdentity",
+         :require #{:value},
+         :type zen/map,
+         :zen/desc "An individual's personal sense of being a man, woman, boy, girl, nonbinary, or something else. This represents an individual’s identity, ascertained by asking them what that identity is. \n In the case where the gender identity is communicated by a third party, for example, if a spouse indicates the gender identity of their partner on an intake form, a Provenance resource can be used with a Provenance.target referring to the Patient, with a targetElement extension identifying the gender identity extension as the target element within the Patient resource.  When exchanging this concept, refer to the guidance in the [Gender Harmony Implementation Guide](http://hl7.org/xprod/ig/uv/gender-harmony/).",
+         :keys {:value {:confirms #{hl7-fhir-r5-core.CodeableConcept/schema},
+                        :zen.fhir/value-set {:symbol hl7-fhir-uv-extensions-r5.value-set.gender-identity/value-set,
+                                             :strength :preferred},
+                        :zen/desc "The individual's gender identity"},
+                :period {:confirms #{hl7-fhir-r5-core.Period/schema},
+                         :zen/desc "The time period during which the gender identity applies to the individual"},
+                :comment {:confirms #{hl7-fhir-r5-core.string/schema},
+                          :zen/desc "Text to further explain the use of the specified gender identity"}}}}

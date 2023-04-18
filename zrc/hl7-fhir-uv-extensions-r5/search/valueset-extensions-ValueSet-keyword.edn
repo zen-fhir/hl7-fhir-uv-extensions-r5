@@ -1,0 +1,13 @@
+{ns hl7-fhir-uv-extensions-r5.search.valueset-extensions-ValueSet-keyword,
+ import #{zen.fhir},
+ search {:zen/tags #{zen.fhir/search},
+         :fhir/id "valueset-extensions-ValueSet-keyword",
+         :fhir/url "http://hl7.org/fhir/SearchParameter/valueset-extensions-ValueSet-keyword",
+         :fhir/type "string",
+         :name "keyword",
+         :expr {:ValueSet {:knife [],
+                           :jsonpath [],
+                           :data-types #{},
+                           :template :string,
+                           :sql {:where [:or],
+                                 :parameter-format "%\"?%"}}}}}

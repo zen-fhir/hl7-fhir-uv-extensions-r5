@@ -1,0 +1,26 @@
+{ns hl7-fhir-uv-extensions-r5.search.workflow-barrierRef,
+ import #{zen.fhir},
+ search {:zen/tags #{zen.fhir/search},
+         :fhir/id "workflow-barrierRef",
+         :fhir/url "http://hl7.org/fhir/SearchParameter/workflow-barrierRef",
+         :fhir/type "reference",
+         :name "workflow-barrierRef",
+         :expr {:CarePlan {:knife [["activity"
+                                    "extension('http://hl7.org/fhir/StructureDefinition/workflow-barrier'"
+                                    "value"
+                                    "reference"]],
+                           :jsonpath ["$.\"activity\".\"extension('http://hl7.org/fhir/StructureDefinition/workflow-barrier'\".\"value\".\"reference\"[*]"],
+                           :data-types #{},
+                           :template :reference},
+                :CommunicationRequest {:knife [["extension('http://hl7.org/fhir/StructureDefinition/workflow-barrier'"
+                                                "value"
+                                                "reference"]],
+                                       :jsonpath ["$.\"extension('http://hl7.org/fhir/StructureDefinition/workflow-barrier'\".\"value\".\"reference\"[*]"],
+                                       :data-types #{},
+                                       :template :reference},
+                :Goal {:knife [["extension('http://hl7.org/fhir/StructureDefinition/workflow-barrier'"
+                                "value"
+                                "reference"]],
+                       :jsonpath ["$.\"extension('http://hl7.org/fhir/StructureDefinition/workflow-barrier'\".\"value\".\"reference\"[*]"],
+                       :data-types #{},
+                       :template :reference}}}}

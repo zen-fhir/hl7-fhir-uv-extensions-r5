@@ -1,0 +1,13 @@
+{ns hl7-fhir-uv-extensions-r5.search.codesystem-extensions-CodeSystem-effective,
+ import #{zen.fhir},
+ search {:zen/tags #{zen.fhir/search},
+         :fhir/id "codesystem-extensions-CodeSystem-effective",
+         :fhir/url "http://hl7.org/fhir/SearchParameter/codesystem-extensions-CodeSystem-effective",
+         :fhir/type "date",
+         :name "effective",
+         :expr {:CodeSystem {:knife [["extension('http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate'"
+                                      "value"]],
+                             :jsonpath ["$.\"extension('http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate'\".\"value\"[*]"],
+                             :data-types #{},
+                             :template :date,
+                             :sql {:where [:or]}}}}}

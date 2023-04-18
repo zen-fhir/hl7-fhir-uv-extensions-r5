@@ -1,0 +1,23 @@
+{ns hl7-fhir-uv-extensions-r5.patient-sexParameterForClinicalUse,
+ import #{hl7-fhir-r5-core.CodeableReference
+          zen.fhir
+          hl7-fhir-r5-core.CodeableConcept
+          hl7-fhir-r5-core.string
+          hl7-fhir-r5-core.Period
+          hl7-fhir-uv-extensions-r5.value-set.sex-parameter-for-clinical-use},
+ schema {:zen.fhir/version "0.6.21-2",
+         :zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse",
+         :require #{:value},
+         :type zen/map,
+         :zen/desc "A Sex Parameter for Clinical Use is a parameter that provides guidance on how a recipient should apply settings or reference ranges that are derived from observable information such as an organ inventory, recent hormone lab tests, genetic testing, menstrual status, obstetric history, etc..  This property is intended for use in clinical decision making, and indicates that treatment or diagnostic tests should consider best practices associated with the relevant reference population.  When exchanging these concepts, refer to the guidance in the [Gender Harmony Implementation Guide](http://hl7.org/xprod/ig/uv/gender-harmony/).",
+         :keys {:value {:confirms #{hl7-fhir-r5-core.CodeableConcept/schema},
+                        :zen.fhir/value-set {:symbol hl7-fhir-uv-extensions-r5.value-set.sex-parameter-for-clinical-use/value-set,
+                                             :strength :required},
+                        :zen/desc "A context-specific sex parameter for clinical use"},
+                :period {:confirms #{hl7-fhir-r5-core.Period/schema},
+                         :zen/desc "When the sex for clinical use applies"},
+                :comment {:confirms #{hl7-fhir-r5-core.string/schema},
+                          :zen/desc "Context about the sex parameter for clinical use"},
+                :supportingInfo {:confirms #{hl7-fhir-r5-core.CodeableReference/schema},
+                                 :zen/desc "Source of the sex for clincal use"}}}}

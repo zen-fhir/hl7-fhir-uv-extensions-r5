@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.condition-assertedDate,
+ import #{zen.fhir hl7-fhir-r5-core.dateTime},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "The date on which the existence of the Condition was first asserted or acknowledged.",
+         :zen.fhir/type "dateTime",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.dateTime/schema}}}

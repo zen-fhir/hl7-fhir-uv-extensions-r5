@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.valueset-map,
+ import #{zen.fhir hl7-fhir-r5-core.canonical},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "A reference to a concept map that is relevant for the interpretation of this value set.",
+         :zen.fhir/type "canonical",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/valueset-map",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.canonical/schema}}}

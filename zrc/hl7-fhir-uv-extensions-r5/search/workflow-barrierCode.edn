@@ -1,0 +1,26 @@
+{ns hl7-fhir-uv-extensions-r5.search.workflow-barrierCode,
+ import #{zen.fhir},
+ search {:zen/tags #{zen.fhir/search},
+         :fhir/id "workflow-barrierCode",
+         :fhir/url "http://hl7.org/fhir/SearchParameter/workflow-barrierCode",
+         :fhir/type "token",
+         :name "workflow-barrierCode",
+         :expr {:CarePlan {:knife [["activity"
+                                    "extension('http://hl7.org/fhir/StructureDefinition/workflow-barrier'"
+                                    "value"
+                                    "concept"]],
+                           :jsonpath ["$.\"activity\".\"extension('http://hl7.org/fhir/StructureDefinition/workflow-barrier'\".\"value\".\"concept\"[*]"],
+                           :data-types #{},
+                           :template :token},
+                :CommunicationRequest {:knife [["extension('http://hl7.org/fhir/StructureDefinition/workflow-barrier'"
+                                                "value"
+                                                "concept"]],
+                                       :jsonpath ["$.\"extension('http://hl7.org/fhir/StructureDefinition/workflow-barrier'\".\"value\".\"concept\"[*]"],
+                                       :data-types #{},
+                                       :template :token},
+                :Goal {:knife [["extension('http://hl7.org/fhir/StructureDefinition/workflow-barrier'"
+                                "value"
+                                "concept"]],
+                       :jsonpath ["$.\"extension('http://hl7.org/fhir/StructureDefinition/workflow-barrier'\".\"value\".\"concept\"[*]"],
+                       :data-types #{},
+                       :template :token}}}}

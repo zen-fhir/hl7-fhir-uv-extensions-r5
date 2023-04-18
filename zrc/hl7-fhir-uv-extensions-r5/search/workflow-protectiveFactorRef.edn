@@ -1,0 +1,26 @@
+{ns hl7-fhir-uv-extensions-r5.search.workflow-protectiveFactorRef,
+ import #{zen.fhir},
+ search {:zen/tags #{zen.fhir/search},
+         :fhir/id "workflow-protectiveFactorRef",
+         :fhir/url "http://hl7.org/fhir/SearchParameter/workflow-protectiveFactorRef",
+         :fhir/type "reference",
+         :name "workflow-protectiveFactorRef",
+         :expr {:CarePlan {:knife [["activity"
+                                    "extension('http://hl7.org/fhir/StructureDefinition/workflow-protectiveFactor'"
+                                    "value"
+                                    "reference"]],
+                           :jsonpath ["$.\"activity\".\"extension('http://hl7.org/fhir/StructureDefinition/workflow-protectiveFactor'\".\"value\".\"reference\"[*]"],
+                           :data-types #{},
+                           :template :reference},
+                :CommunicationRequest {:knife [["extension('http://hl7.org/fhir/StructureDefinition/workflow-protectiveFactor'"
+                                                "value"
+                                                "reference"]],
+                                       :jsonpath ["$.\"extension('http://hl7.org/fhir/StructureDefinition/workflow-protectiveFactor'\".\"value\".\"reference\"[*]"],
+                                       :data-types #{},
+                                       :template :reference},
+                :Goal {:knife [["extension('http://hl7.org/fhir/StructureDefinition/workflow-protectiveFactor'"
+                                "value"
+                                "reference"]],
+                       :jsonpath ["$.\"extension('http://hl7.org/fhir/StructureDefinition/workflow-protectiveFactor'\".\"value\".\"reference\"[*]"],
+                       :data-types #{},
+                       :template :reference}}}}

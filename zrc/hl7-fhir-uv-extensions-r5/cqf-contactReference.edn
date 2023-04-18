@@ -1,0 +1,16 @@
+{ns hl7-fhir-uv-extensions-r5.cqf-contactReference,
+ import #{zen.fhir
+          hl7-fhir-r5-core.Group
+          hl7-fhir-r5-core.Device
+          hl7-fhir-r5-core.Organization
+          hl7-fhir-r5-core.Person},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "A reference to a Person, Group, Device, or Organization that is the contact.",
+         :zen.fhir/type "Reference",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/cqf-contactReference",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{zen.fhir/Reference},
+         :zen.fhir/reference {:refers #{hl7-fhir-r5-core.Organization/schema
+                                        hl7-fhir-r5-core.Person/schema
+                                        hl7-fhir-r5-core.Device/schema
+                                        hl7-fhir-r5-core.Group/schema}}}}

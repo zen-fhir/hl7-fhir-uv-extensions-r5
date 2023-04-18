@@ -1,0 +1,20 @@
+{ns hl7-fhir-uv-extensions-r5.individual-pronouns,
+ import #{zen.fhir
+          hl7-fhir-r5-core.CodeableConcept
+          hl7-fhir-r5-core.string
+          hl7-fhir-uv-extensions-r5.value-set.pronouns
+          hl7-fhir-r5-core.Period},
+ schema {:zen.fhir/version "0.6.21-2",
+         :zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/individual-pronouns",
+         :require #{:value},
+         :type zen/map,
+         :zen/desc "The pronouns to use when referring to an individual in verbal or written communication.",
+         :keys {:value {:confirms #{hl7-fhir-r5-core.CodeableConcept/schema},
+                        :zen.fhir/value-set {:symbol hl7-fhir-uv-extensions-r5.value-set.pronouns/value-set,
+                                             :strength :example},
+                        :zen/desc "The individual's pronouns"},
+                :period {:confirms #{hl7-fhir-r5-core.Period/schema},
+                         :zen/desc "When the pronouns apply to the individual"},
+                :comment {:confirms #{hl7-fhir-r5-core.string/schema},
+                          :zen/desc "Explaination about the use of the pronouns"}}}}

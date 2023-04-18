@@ -1,0 +1,23 @@
+{ns hl7-fhir-uv-extensions-r5.cqf-targetInvariant,
+ import #{zen.fhir
+          hl7-fhir-r5-core.string
+          hl7-fhir-r5-core.code
+          hl7-fhir-r5-core.value-set.constraint-severity
+          hl7-fhir-r5-core.Expression
+          hl7-fhir-r5-core.id},
+ schema {:zen.fhir/version "0.6.21-2",
+         :zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/cqf-targetInvariant",
+         :require #{:expression :key :severity},
+         :type zen/map,
+         :zen/desc "Specifies an invariant that is enforced in the context of an instantiated resource.",
+         :keys {:key {:confirms #{hl7-fhir-r5-core.id/schema},
+                      :zen/desc "Unique identifier"},
+                :requirements {:confirms #{hl7-fhir-r5-core.string/schema},
+                               :zen/desc "Why the invariant is defined"},
+                :severity {:confirms #{hl7-fhir-r5-core.code/schema},
+                           :zen.fhir/value-set {:symbol hl7-fhir-r5-core.value-set.constraint-severity/value-set,
+                                                :strength :required},
+                           :zen/desc "error | warning"},
+                :expression {:confirms #{hl7-fhir-r5-core.Expression/schema},
+                             :zen/desc "The invariant expression"}}}}

@@ -1,0 +1,27 @@
+{ns hl7-fhir-uv-extensions-r5.cqf-artifactComment,
+ import #{hl7-fhir-r5-core.markdown
+          zen.fhir
+          hl7-fhir-r5-core.string
+          hl7-fhir-r5-core.code
+          hl7-fhir-uv-extensions-r5.value-set.artifact-comment-type
+          hl7-fhir-r5-core.uri},
+ schema {:zen.fhir/version "0.6.21-2",
+         :zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/cqf-artifactComment",
+         :require #{:type :text},
+         :type zen/map,
+         :zen/desc "A comment containing additional documentation, a review comment, usage guidance, or other relevant information from a particular user.",
+         :keys {:type {:confirms #{hl7-fhir-r5-core.code/schema},
+                       :zen.fhir/value-set {:symbol hl7-fhir-uv-extensions-r5.value-set.artifact-comment-type/value-set,
+                                            :strength :required},
+                       :zen/desc "documentation | review | guidance"},
+                :text {:confirms #{hl7-fhir-r5-core.markdown/schema},
+                       :zen/desc "The comment"},
+                :target {:type zen/vector,
+                         :every {:confirms #{hl7-fhir-r5-core.uri/schema},
+                                 :zen/desc "What the comment is directed to"}},
+                :reference {:type zen/vector,
+                            :every {:confirms #{hl7-fhir-r5-core.uri/schema},
+                                    :zen/desc "Supporting reference for the comment"}},
+                :user {:confirms #{hl7-fhir-r5-core.string/schema},
+                       :zen/desc "Who commented"}}}}

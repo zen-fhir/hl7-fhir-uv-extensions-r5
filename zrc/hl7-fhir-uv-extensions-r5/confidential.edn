@@ -1,0 +1,16 @@
+{ns hl7-fhir-uv-extensions-r5.confidential,
+ import #{zen.fhir
+          hl7-fhir-r5-core.CodeableConcept
+          hl7-terminology-r5.value-set.v3-Confidentiality
+          hl7-fhir-r5-core.uri},
+ schema {:fhir/polymorphic true,
+         :zen.fhir/version "0.6.21-2",
+         :zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/confidential",
+         :type zen/map,
+         :zen/desc "Expresses the access policy associated with the element.",
+         :keys {:uri {:confirms #{hl7-fhir-r5-core.uri/schema}},
+                :CodeableConcept {:confirms #{hl7-fhir-r5-core.CodeableConcept/schema},
+                                  :zen.fhir/value-set {:symbol hl7-terminology-r5.value-set.v3-Confidentiality/value-set,
+                                                       :strength :example}}},
+         :exclusive-keys #{#{:uri :CodeableConcept}}}}

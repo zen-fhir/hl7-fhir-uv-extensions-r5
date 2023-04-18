@@ -1,0 +1,12 @@
+{ns hl7-fhir-uv-extensions-r5.search.valueset-extensions-ValueSet-effective,
+ import #{zen.fhir},
+ search {:zen/tags #{zen.fhir/search},
+         :fhir/id "valueset-extensions-ValueSet-effective",
+         :fhir/url "http://hl7.org/fhir/SearchParameter/valueset-extensions-ValueSet-effective",
+         :fhir/type "date",
+         :name "effective",
+         :expr {:ValueSet {:knife [],
+                           :jsonpath [],
+                           :data-types #{},
+                           :template :date,
+                           :sql {:where [:or]}}}}}

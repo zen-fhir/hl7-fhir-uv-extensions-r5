@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.auditevent-AlternativeUserID,
+ import #{zen.fhir hl7-fhir-r5-core.Identifier},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "An AlternativeUserID Number associated with this participant object.",
+         :zen.fhir/type "Identifier",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/auditevent-AlternativeUserID",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.Identifier/schema}}}

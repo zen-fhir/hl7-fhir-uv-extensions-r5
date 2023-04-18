@@ -1,0 +1,20 @@
+{ns hl7-fhir-uv-extensions-r5.auditevent-OnBehalfOf,
+ import #{zen.fhir
+          hl7-fhir-r5-core.Practitioner
+          hl7-fhir-r5-core.Organization
+          hl7-fhir-r5-core.CareTeam
+          hl7-fhir-r5-core.RelatedPerson
+          hl7-fhir-r5-core.PractitionerRole
+          hl7-fhir-r5-core.Patient},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "When an AuditEvent is attributed to an agent that is acting on behalf of another agent. Typically needed when multiple agents are acting on behalf of different organizations, and when PractitionerRole is not appropriate.",
+         :zen.fhir/type "Reference",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/auditevent-OnBehalfOf",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{zen.fhir/Reference},
+         :zen.fhir/reference {:refers #{hl7-fhir-r5-core.Patient/schema
+                                        hl7-fhir-r5-core.CareTeam/schema
+                                        hl7-fhir-r5-core.PractitionerRole/schema
+                                        hl7-fhir-r5-core.Organization/schema
+                                        hl7-fhir-r5-core.Practitioner/schema
+                                        hl7-fhir-r5-core.RelatedPerson/schema}}}}

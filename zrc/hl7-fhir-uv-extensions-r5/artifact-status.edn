@@ -1,0 +1,13 @@
+{ns hl7-fhir-uv-extensions-r5.artifact-status,
+ import #{zen.fhir
+          hl7-fhir-r5-core.code
+          hl7-fhir-r5-core.value-set.publication-status},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "The status of this {{title}}. Enables tracking the life-cycle of the content.",
+         :zen.fhir/type "code",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/artifact-status",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.code/schema},
+         :fhir/flags #{:?!},
+         :zen.fhir/value-set {:symbol hl7-fhir-r5-core.value-set.publication-status/value-set,
+                              :strength :required}}}

@@ -1,0 +1,9 @@
+{ns hl7-fhir-uv-extensions-r5.workflow-followOnOf,
+ import #{zen.fhir},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "Points to a preceding event within a workflow that was a prerequisite for or provides other justification for the current action.",
+         :zen.fhir/type "Reference",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/workflow-followOnOf",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{zen.fhir/Reference},
+         :zen.fhir/reference {:refers #{}}}}

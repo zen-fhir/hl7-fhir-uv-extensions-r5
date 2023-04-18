@@ -1,0 +1,20 @@
+{ns hl7-fhir-uv-extensions-r5.value-set.dataelement-sdcobjectclass,
+ import #{zen.fhir},
+ value-set {:zen/tags #{zen.fhir/value-set},
+            :zen/desc "The allowed codes for identifying the ISO 11179 ObjectClass for a particular data element if intended for registration/use within the U.S. Structured Data Capture (SDC) project.",
+            :zen.fhir/version "0.6.21-2",
+            :fhir/code-systems #{{:fhir/url "http://loinc.org",
+                                  :zen.fhir/content :not-present}
+                                 {:fhir/url "http://www.nlm.nih.gov/research/umls/rxnorm",
+                                  :zen.fhir/content :not-present}
+                                 {:fhir/url "http://snomed.info/sct",
+                                  :zen.fhir/content :not-present}},
+            :uri "http://hl7.org/fhir/ValueSet/dataelement-sdcobjectclass",
+            :version "1.0.0",
+            :ftr {:module "hl7-fhir-uv-extensions-r5",
+                  :source-url "https://storage.googleapis.com",
+                  :source-type :cloud-storage,
+                  :ftr-path "ftr",
+                  :tag "init",
+                  :validation-index {:type :nippy,
+                                     :file "index.nippy"}}}}

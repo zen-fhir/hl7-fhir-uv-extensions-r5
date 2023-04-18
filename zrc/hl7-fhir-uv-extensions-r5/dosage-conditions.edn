@@ -1,0 +1,58 @@
+{ns hl7-fhir-uv-extensions-r5.dosage-conditions,
+ import #{hl7-fhir-r5-core.boolean
+          zen.fhir
+          hl7-fhir-r5-core.ObservationDefinition
+          hl7-fhir-r5-core.ActivityDefinition
+          hl7-fhir-r5-core.string
+          hl7-fhir-r5-core.Reference
+          hl7-fhir-r5-core.Procedure
+          hl7-fhir-r5-core.Extension
+          hl7-fhir-r5-core.Goal
+          hl7-fhir-r5-core.Duration},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "Conditions that apply to this set of dosing instructions.",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/dosage-conditions",
+         :zen.fhir/version "0.6.21-2",
+         :type zen/map,
+         :keys {:meetGoal {:type zen/vector,
+                           :every {:confirms #{hl7-fhir-r5-core.Extension/schema},
+                                   :fhir/extensionUri "meetGoal",
+                                   :type zen/map,
+                                   :keys {:offset {:confirms #{hl7-fhir-r5-core.Duration/schema}},
+                                          :goal {:confirms #{hl7-fhir-r5-core.Extension/schema},
+                                                 :fhir/polymorphic true,
+                                                 :type zen/map,
+                                                 :exclusive-keys #{#{:string
+                                                                     :Reference}},
+                                                 :keys {:string {:confirms #{hl7-fhir-r5-core.string/schema}},
+                                                        :Reference {:confirms #{hl7-fhir-r5-core.Reference/schema
+                                                                                zen.fhir/Reference},
+                                                                    :zen.fhir/reference {:refers #{hl7-fhir-r5-core.Goal/schema}}}}}},
+                                   :require #{:goal}}},
+                :whenTrigger {:type zen/vector,
+                              :every {:confirms #{hl7-fhir-r5-core.Extension/schema},
+                                      :fhir/extensionUri "whenTrigger",
+                                      :type zen/map,
+                                      :keys {:offset {:confirms #{hl7-fhir-r5-core.Duration/schema}},
+                                             :trigger {:confirms #{hl7-fhir-r5-core.Extension/schema},
+                                                       :fhir/polymorphic true,
+                                                       :type zen/map,
+                                                       :exclusive-keys #{#{:string
+                                                                           :Reference}},
+                                                       :keys {:string {:confirms #{hl7-fhir-r5-core.string/schema}},
+                                                              :Reference {:confirms #{hl7-fhir-r5-core.Reference/schema
+                                                                                      zen.fhir/Reference},
+                                                                          :zen.fhir/reference {:refers #{hl7-fhir-r5-core.Procedure/schema
+                                                                                                         hl7-fhir-r5-core.ActivityDefinition/schema
+                                                                                                         hl7-fhir-r5-core.ObservationDefinition/schema}}}}}},
+                                      :require #{:trigger}}},
+                :precondition {:type zen/vector,
+                               :every {:confirms #{hl7-fhir-r5-core.Extension/schema},
+                                       :fhir/extensionUri "precondition",
+                                       :type zen/map,
+                                       :keys {:doesNotOccur {:confirms #{hl7-fhir-r5-core.boolean/schema}},
+                                              :condition {:confirms #{hl7-fhir-r5-core.Reference/schema
+                                                                      zen.fhir/Reference},
+                                                          :zen.fhir/reference {:refers #{hl7-fhir-r5-core.ActivityDefinition/schema
+                                                                                         hl7-fhir-r5-core.ObservationDefinition/schema}}}},
+                                       :require #{:condition}}}}}}

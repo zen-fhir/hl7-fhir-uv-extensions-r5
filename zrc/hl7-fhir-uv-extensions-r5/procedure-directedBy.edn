@@ -1,0 +1,22 @@
+{ns hl7-fhir-uv-extensions-r5.procedure-directedBy,
+ import #{zen.fhir
+          hl7-fhir-r5-core.CodeableConcept
+          hl7-fhir-r5-core.Practitioner
+          hl7-fhir-r5-core.Reference
+          hl7-fhir-r5-core.RelatedPerson
+          hl7-fhir-r5-core.PractitionerRole
+          hl7-fhir-r5-core.Patient},
+ schema {:fhir/polymorphic true,
+         :zen.fhir/version "0.6.21-2",
+         :zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/procedure-directedBy",
+         :type zen/map,
+         :zen/desc "The target of the extension is a distinct actor from the requester and has decision-making authority over the service and takes direct responsibility to manage the service.",
+         :keys {:CodeableConcept {:confirms #{hl7-fhir-r5-core.CodeableConcept/schema}},
+                :Reference {:confirms #{hl7-fhir-r5-core.Reference/schema
+                                        zen.fhir/Reference},
+                            :zen.fhir/reference {:refers #{hl7-fhir-r5-core.Patient/schema
+                                                           hl7-fhir-r5-core.PractitionerRole/schema
+                                                           hl7-fhir-r5-core.Practitioner/schema
+                                                           hl7-fhir-r5-core.RelatedPerson/schema}}}},
+         :exclusive-keys #{#{:CodeableConcept :Reference}}}}

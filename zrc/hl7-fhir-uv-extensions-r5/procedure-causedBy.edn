@@ -1,0 +1,30 @@
+{ns hl7-fhir-uv-extensions-r5.procedure-causedBy,
+ import #{zen.fhir
+          hl7-fhir-r5-core.Observation
+          hl7-fhir-r5-core.ImmunizationRecommendation
+          hl7-fhir-r5-core.MedicationRequest
+          hl7-fhir-r5-core.DiagnosticReport
+          hl7-fhir-r5-core.MedicationStatement
+          hl7-fhir-r5-core.FamilyMemberHistory
+          hl7-fhir-r5-core.Procedure
+          hl7-fhir-r5-core.MedicationAdministration
+          hl7-fhir-r5-core.ImagingStudy
+          hl7-fhir-r5-core.AllergyIntolerance
+          hl7-fhir-r5-core.Immunization},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "This procedure is because of the related item.",
+         :zen.fhir/type "Reference",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/procedure-causedBy",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{zen.fhir/Reference},
+         :zen.fhir/reference {:refers #{hl7-fhir-r5-core.MedicationAdministration/schema
+                                        hl7-fhir-r5-core.ImagingStudy/schema
+                                        hl7-fhir-r5-core.Observation/schema
+                                        hl7-fhir-r5-core.Procedure/schema
+                                        hl7-fhir-r5-core.ImmunizationRecommendation/schema
+                                        hl7-fhir-r5-core.DiagnosticReport/schema
+                                        hl7-fhir-r5-core.FamilyMemberHistory/schema
+                                        hl7-fhir-r5-core.Immunization/schema
+                                        hl7-fhir-r5-core.MedicationRequest/schema
+                                        hl7-fhir-r5-core.MedicationStatement/schema
+                                        hl7-fhir-r5-core.AllergyIntolerance/schema}}}}

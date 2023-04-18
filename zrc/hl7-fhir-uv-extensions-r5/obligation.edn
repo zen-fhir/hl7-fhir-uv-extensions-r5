@@ -1,0 +1,36 @@
+{ns hl7-fhir-uv-extensions-r5.obligation,
+ import #{hl7-fhir-r5-core.markdown
+          zen.fhir
+          hl7-fhir-r5-core.UsageContext
+          hl7-fhir-r5-core.string
+          hl7-fhir-uv-extensions-r5.value-set.obligation
+          hl7-fhir-r5-core.canonical
+          hl7-fhir-r5-core.Coding
+          hl7-fhir-r5-core.uri},
+ schema {:zen.fhir/version "0.6.21-2",
+         :zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/obligation",
+         :require #{:code},
+         :type zen/map,
+         :zen/desc "Documents obligations that apply to applications implementing this element. The obligations relate to application behaviour, not the content of the element itself in the resource instances that contain this element. See [Obligation Extension](obligations.html) for further detail",
+         :keys {:code {:type zen/vector,
+                       :every {:confirms #{hl7-fhir-r5-core.Coding/schema},
+                               :zen.fhir/value-set {:symbol hl7-fhir-uv-extensions-r5.value-set.obligation/value-set,
+                                                    :strength :extensible},
+                               :zen/desc "Composite code describing the nature of the obligation"},
+                       :minItems 1},
+                :actor {:type zen/vector,
+                        :every {:confirms #{hl7-fhir-r5-core.canonical/schema},
+                                :zen/desc "Actor(s) this obligation applies to (all actors if none)"}},
+                :documentation {:confirms #{hl7-fhir-r5-core.markdown/schema},
+                                :zen/desc "Documentation of the purpose or application of the obligation"},
+                :usage {:type zen/vector,
+                        :every {:confirms #{hl7-fhir-r5-core.UsageContext/schema},
+                                :zen/desc "Qualifies the usage - jurisdiction, gender, workflow status etc"}},
+                :filter {:confirms #{hl7-fhir-r5-core.string/schema},
+                         :zen/desc "Limits obligation to some repeats by FHIRPath"},
+                :filterDocumentation {:confirms #{hl7-fhir-r5-core.string/schema},
+                                      :zen/desc "Ddescribes the intent of the filter (short)"},
+                :process {:type zen/vector,
+                          :every {:confirms #{hl7-fhir-r5-core.uri/schema},
+                                  :zen/desc "The obligation only applies when perfomring the indicated process"}}}}}

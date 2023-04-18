@@ -1,0 +1,12 @@
+{ns hl7-fhir-uv-extensions-r5.capabilitystatement-search-mode,
+ import #{zen.fhir
+          hl7-fhir-uv-extensions-r5.value-set.capabilitystatement-search-mode
+          hl7-fhir-r5-core.code},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "Which search modes the server supports: GET, POST, or both",
+         :zen.fhir/type "code",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-mode",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.code/schema},
+         :zen.fhir/value-set {:symbol hl7-fhir-uv-extensions-r5.value-set.capabilitystatement-search-mode/value-set,
+                              :strength :required}}}

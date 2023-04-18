@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.device-commercialBrand,
+ import #{zen.fhir hl7-fhir-r5-core.string},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "The overall name of a collection of branded devices that an organization brings to market.  It is typically not the same as, although can be derived from, the organization name that owns the name.",
+         :zen.fhir/type "string",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/device-commercialBrand",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.string/schema}}}

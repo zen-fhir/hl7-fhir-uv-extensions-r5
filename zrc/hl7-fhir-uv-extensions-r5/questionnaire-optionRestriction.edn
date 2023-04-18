@@ -1,0 +1,38 @@
+{ns hl7-fhir-uv-extensions-r5.questionnaire-optionRestriction,
+ import #{zen.fhir
+          hl7-fhir-r5-core.string
+          hl7-fhir-r5-core.Reference
+          hl7-fhir-r5-core.date
+          hl7-fhir-r5-core.integer
+          hl7-fhir-r5-core.time
+          hl7-fhir-r5-core.Extension
+          hl7-fhir-r5-core.Coding
+          hl7-fhir-r5-core.Expression},
+ schema {:zen.fhir/version "0.6.21-2",
+         :zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/questionnaire-optionRestriction",
+         :require #{:expression :option},
+         :type zen/map,
+         :zen/desc "Allows disabling certain questionnaire options for the containing item based on evaluating expressions.",
+         :keys {:option {:type zen/vector,
+                         :every {:confirms #{hl7-fhir-r5-core.Extension/schema},
+                                 :fhir/polymorphic true,
+                                 :type zen/map,
+                                 :exclusive-keys #{#{:date
+                                                     :time
+                                                     :string
+                                                     :integer
+                                                     :Coding
+                                                     :Reference}},
+                                 :keys {:integer {:confirms #{hl7-fhir-r5-core.integer/schema}},
+                                        :date {:confirms #{hl7-fhir-r5-core.date/schema}},
+                                        :time {:confirms #{hl7-fhir-r5-core.time/schema}},
+                                        :string {:confirms #{hl7-fhir-r5-core.string/schema}},
+                                        :Coding {:confirms #{hl7-fhir-r5-core.Coding/schema}},
+                                        :Reference {:confirms #{hl7-fhir-r5-core.Reference/schema
+                                                                zen.fhir/Reference},
+                                                    :zen.fhir/reference {:refers #{}}}},
+                                 :zen/desc "Option to exclude"},
+                         :minItems 1},
+                :expression {:confirms #{hl7-fhir-r5-core.Expression/schema},
+                             :zen/desc "Expression to trigger exclusion"}}}}

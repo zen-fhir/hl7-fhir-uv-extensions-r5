@@ -1,0 +1,12 @@
+{ns hl7-fhir-uv-extensions-r5.elementdefinition-equivalence,
+ import #{hl7-fhir-uv-extensions-r5.value-set.concept-map-equivalence
+          zen.fhir
+          hl7-fhir-r5-core.code},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "The level of equivalence between the element containing the mapping and the element mapped to.",
+         :zen.fhir/type "code",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/elementdefinition-equivalence",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.code/schema},
+         :zen.fhir/value-set {:symbol hl7-fhir-uv-extensions-r5.value-set.concept-map-equivalence/value-set,
+                              :strength :required}}}

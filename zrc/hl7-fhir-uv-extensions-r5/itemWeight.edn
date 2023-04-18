@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.itemWeight,
+ import #{hl7-fhir-r5-core.decimal zen.fhir},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "A numeric value that allows the comparison (less than, greater than) or other numerical manipulation of a concept (e.g. Adding up components of a score). Scores are usually a whole number, but occasionally decimals are encountered in scores. Note: This extension used to called http://hl7.org/fhir/StructureDefinition/ordinalValue",
+         :zen.fhir/type "decimal",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/itemWeight",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.decimal/schema}}}

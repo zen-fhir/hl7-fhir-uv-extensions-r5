@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.artifact-copyright,
+ import #{hl7-fhir-r5-core.markdown zen.fhir},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "A copyright statement relating to the {{title}} and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the {{title}}.",
+         :zen.fhir/type "markdown",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/artifact-copyright",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.markdown/schema}}}

@@ -1,0 +1,13 @@
+{ns hl7-fhir-uv-extensions-r5.search.patient-extensions-Patient-birthOrderBoolean,
+ import #{zen.fhir},
+ search {:zen/tags #{zen.fhir/search},
+         :fhir/id "patient-extensions-Patient-birthOrderBoolean",
+         :fhir/url "http://hl7.org/fhir/SearchParameter/patient-extensions-Patient-birthOrderBoolean",
+         :fhir/type "token",
+         :name "birthOrderBoolean",
+         :expr {:Patient {:knife [["multipleBirthBoolean"]
+                                  ["multipleBirthInteger"]],
+                          :jsonpath ["$.\"multipleBirthBoolean\"[*]"
+                                     "$.\"multipleBirthInteger\"[*]"],
+                          :data-types #{},
+                          :template :token}}}}

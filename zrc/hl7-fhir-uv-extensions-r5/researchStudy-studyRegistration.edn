@@ -1,0 +1,20 @@
+{ns hl7-fhir-uv-extensions-r5.researchStudy-studyRegistration,
+ import #{hl7-fhir-uv-extensions-r5.value-set.research-study-registration-activity
+          hl7-fhir-r5-core.boolean
+          zen.fhir
+          hl7-fhir-r5-core.CodeableConcept
+          hl7-fhir-r5-core.Period},
+ schema {:zen.fhir/version "0.6.21-2",
+         :zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/researchStudy-studyRegistration",
+         :require #{:activity},
+         :type zen/map,
+         :zen/desc "Dates for study registration activities.",
+         :keys {:activity {:confirms #{hl7-fhir-r5-core.CodeableConcept/schema},
+                           :zen.fhir/value-set {:symbol hl7-fhir-uv-extensions-r5.value-set.research-study-registration-activity/value-set,
+                                                :strength :extensible},
+                           :zen/desc "The specific activity"},
+                :actual {:confirms #{hl7-fhir-r5-core.boolean/schema},
+                         :zen/desc "Actual if true, else anticipated"},
+                :period {:confirms #{hl7-fhir-r5-core.Period/schema},
+                         :zen/desc "Date range"}}}}

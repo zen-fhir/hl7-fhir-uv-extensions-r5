@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.replaces,
+ import #{zen.fhir hl7-fhir-r5-core.canonical},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "This indicates a separate conformance resource instance that is superseded by the current instance.",
+         :zen.fhir/type "canonical",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/replaces",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.canonical/schema}}}

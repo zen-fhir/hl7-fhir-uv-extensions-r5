@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.elementdefinition-type-must-support,
+ import #{hl7-fhir-r5-core.boolean zen.fhir},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "If true indicates that the specified type, profile or targetProfile must be supported by implementations.",
+         :zen.fhir/type "boolean",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.boolean/schema}}}

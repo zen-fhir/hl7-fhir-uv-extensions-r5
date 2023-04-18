@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.valueset-special-status,
+ import #{zen.fhir hl7-fhir-r5-core.string},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "A special note for implementers about the status of the resource.",
+         :zen.fhir/type "string",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/valueset-special-status",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.string/schema}}}

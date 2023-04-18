@@ -1,0 +1,11 @@
+{ns hl7-fhir-uv-extensions-r5.search.valueset-extensions-ValueSet-workflow,
+ import #{zen.fhir},
+ search {:zen/tags #{zen.fhir/search},
+         :fhir/id "valueset-extensions-ValueSet-workflow",
+         :fhir/url "http://hl7.org/fhir/SearchParameter/valueset-extensions-ValueSet-workflow",
+         :fhir/type "token",
+         :name "workflow",
+         :expr {:ValueSet {:knife [],
+                           :jsonpath [],
+                           :data-types #{},
+                           :template :token}}}}

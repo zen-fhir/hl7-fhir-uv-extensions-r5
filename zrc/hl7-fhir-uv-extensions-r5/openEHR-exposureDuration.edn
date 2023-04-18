@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.openEHR-exposureDuration,
+ import #{zen.fhir hl7-fhir-r5-core.Duration},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "The amount of time the individual was exposed to the Substance.",
+         :zen.fhir/type "Duration",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/openEHR-exposureDuration",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.Duration/schema}}}

@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.designNote,
+ import #{hl7-fhir-r5-core.markdown zen.fhir},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "Information captured by the author/maintainer of the questionnaire for development purposes, not intended to be seen by users.",
+         :zen.fhir/type "markdown",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/designNote",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.markdown/schema}}}

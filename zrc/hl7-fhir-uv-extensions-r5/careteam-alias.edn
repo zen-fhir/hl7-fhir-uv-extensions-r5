@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.careteam-alias,
+ import #{zen.fhir hl7-fhir-r5-core.string},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "Alternate names by which the team is also known.",
+         :zen.fhir/type "string",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/careteam-alias",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.string/schema}}}

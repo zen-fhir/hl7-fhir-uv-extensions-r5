@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.artifact-identifier,
+ import #{zen.fhir hl7-fhir-r5-core.Identifier},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "A formal identifier that is used to identify this {{title}} when it is represented in other formats, or referenced in a specification, model, design or an instance.",
+         :zen.fhir/type "Identifier",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/artifact-identifier",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.Identifier/schema}}}

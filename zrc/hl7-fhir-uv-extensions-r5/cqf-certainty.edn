@@ -1,0 +1,27 @@
+{ns hl7-fhir-uv-extensions-r5.cqf-certainty,
+ import #{zen.fhir
+          hl7-fhir-r5-core.CodeableConcept
+          hl7-fhir-r5-core.value-set.certainty-type
+          hl7-fhir-r5-core.Annotation
+          hl7-fhir-r5-core.string
+          hl7-fhir-r5-core.value-set.certainty-rating},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "An assessment of certainty, confidence, or quality of the item on which it appears.",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/cqf-certainty",
+         :zen.fhir/version "0.6.21-2",
+         :type zen/map,
+         :keys {:description {:confirms #{hl7-fhir-r5-core.string/schema},
+                              :zen/desc "Textual description of certainty"},
+                :note {:type zen/vector,
+                       :every {:confirms #{hl7-fhir-r5-core.Annotation/schema},
+                               :zen/desc "Footnotes and/or explanatory notes"}},
+                :type {:confirms #{hl7-fhir-r5-core.CodeableConcept/schema},
+                       :zen.fhir/value-set {:symbol hl7-fhir-r5-core.value-set.certainty-type/value-set,
+                                            :strength :example},
+                       :zen/desc "Aspect of certainty being rated"},
+                :rating {:confirms #{hl7-fhir-r5-core.CodeableConcept/schema},
+                         :zen.fhir/value-set {:symbol hl7-fhir-r5-core.value-set.certainty-rating/value-set,
+                                              :strength :example},
+                         :zen/desc "Assessment or judgement of the aspect"},
+                :rater {:confirms #{hl7-fhir-r5-core.string/schema},
+                        :zen/desc "Who provided the rating"}}}}

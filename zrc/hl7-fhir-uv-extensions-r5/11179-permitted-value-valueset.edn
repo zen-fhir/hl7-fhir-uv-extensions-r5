@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.11179-permitted-value-valueset,
+ import #{zen.fhir hl7-fhir-r5-core.canonical},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "Allows expressing the value set that must be stored internally by the system (as distinct from the base value set which defines values for exchange).",
+         :zen.fhir/type "canonical",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/11179-permitted-value-valueset",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.canonical/schema}}}

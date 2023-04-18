@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.artifact-versionAlgorithm,
+ import #{zen.fhir hl7-fhir-r5-core.string},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "Indicates the mechanism used to compare versions to determine which is more current.",
+         :zen.fhir/type "string",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.string/schema}}}

@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.cqf-alternativeExpression,
+ import #{zen.fhir hl7-fhir-r5-core.Expression},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "Specifies an alternative, equivalent expression in another formal language. For example, given a condition expression in CQL, an alternative formulation in SQL could be provided.",
+         :zen.fhir/type "Expression",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/cqf-alternativeExpression",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.Expression/schema}}}

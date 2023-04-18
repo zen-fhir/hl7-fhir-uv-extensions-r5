@@ -1,0 +1,26 @@
+{ns hl7-fhir-uv-extensions-r5.workflow-triggeredBy,
+ import #{hl7-fhir-r5-core.PlanDefinition
+          zen.fhir
+          hl7-fhir-r5-core.ActivityDefinition
+          hl7-fhir-r5-core.OperationDefinition
+          hl7-fhir-r5-core.Questionnaire
+          hl7-fhir-r5-core.Measure
+          hl7-fhir-r5-core.Reference
+          hl7-fhir-r5-core.canonical
+          hl7-fhir-r5-core.uri},
+ schema {:fhir/polymorphic true,
+         :zen.fhir/version "0.6.21-2",
+         :zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy",
+         :type zen/map,
+         :zen/desc "This resource came into being as a result of expectations set in the referenced Definition resource.  I.e. This resource represents a 'step' dictated within the protocol/order set/etc.",
+         :keys {:canonical {:confirms #{hl7-fhir-r5-core.canonical/schema}},
+                :Reference {:confirms #{hl7-fhir-r5-core.Reference/schema
+                                        zen.fhir/Reference},
+                            :zen.fhir/reference {:refers #{hl7-fhir-r5-core.PlanDefinition/schema
+                                                           hl7-fhir-r5-core.OperationDefinition/schema
+                                                           hl7-fhir-r5-core.ActivityDefinition/schema
+                                                           hl7-fhir-r5-core.Measure/schema
+                                                           hl7-fhir-r5-core.Questionnaire/schema}}},
+                :uri {:confirms #{hl7-fhir-r5-core.uri/schema}}},
+         :exclusive-keys #{#{:canonical :uri :Reference}}}}

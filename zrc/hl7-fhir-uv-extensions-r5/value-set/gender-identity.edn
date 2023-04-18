@@ -1,0 +1,20 @@
+{ns hl7-fhir-uv-extensions-r5.value-set.gender-identity,
+ import #{zen.fhir},
+ value-set {:zen/tags #{zen.fhir/value-set},
+            :zen/desc "Codes that indicate a individual's gender identity. This value set is a minimum set of commonly used values.  It is expected and encouraged that specific jurisdictions or communities will use additional gender identity concepts that are relevant within their community.",
+            :zen.fhir/version "0.6.21-2",
+            :fhir/code-systems #{{:fhir/url "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                                  :zen.fhir/content :bundled}
+                                 {:fhir/url "http://snomed.info/sct",
+                                  :zen.fhir/content :bundled}
+                                 {:fhir/url "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+                                  :zen.fhir/content :bundled}},
+            :uri "http://terminology.hl7.org/ValueSet/gender-identity",
+            :version "1.0.0",
+            :ftr {:module "hl7-fhir-uv-extensions-r5",
+                  :source-url "https://storage.googleapis.com",
+                  :source-type :cloud-storage,
+                  :ftr-path "ftr",
+                  :tag "init",
+                  :validation-index {:type :nippy,
+                                     :file "index.nippy"}}}}

@@ -1,0 +1,9 @@
+{ns hl7-fhir-uv-extensions-r5.diagnosticReport-replaces,
+ import #{zen.fhir hl7-fhir-r5-core.DiagnosticReport},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "The report replaces the target resource.  For example, when a final anatomic pathology report replaces a preliminary anatomic pathology report replaces  where the subsequent observation of case and report  may be on more or different material (specimen).  Note that  this is not same concept as` DiagnosticReport.status`  = preliminary of final, but industry definition of preliminary and final.",
+         :zen.fhir/type "Reference",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/diagnosticReport-replaces",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{zen.fhir/Reference},
+         :zen.fhir/reference {:refers #{hl7-fhir-r5-core.DiagnosticReport/schema}}}}

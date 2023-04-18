@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.artifact-experimental,
+ import #{hl7-fhir-r5-core.boolean zen.fhir},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "A Boolean value to indicate that this {{title}} is authored for testing purposes (or education/evaluation/marketing) and is not intended to be used for genuine usage.",
+         :zen.fhir/type "boolean",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/artifact-experimental",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.boolean/schema}}}

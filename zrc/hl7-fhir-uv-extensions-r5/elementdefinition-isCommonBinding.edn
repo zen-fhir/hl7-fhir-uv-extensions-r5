@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.elementdefinition-isCommonBinding,
+ import #{hl7-fhir-r5-core.boolean zen.fhir},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "Whether the binding is used on multiple resources, or only on this resource.",
+         :zen.fhir/type "boolean",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.boolean/schema}}}

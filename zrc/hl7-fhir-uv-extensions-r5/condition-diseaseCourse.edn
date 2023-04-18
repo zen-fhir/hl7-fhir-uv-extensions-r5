@@ -1,0 +1,12 @@
+{ns hl7-fhir-uv-extensions-r5.condition-diseaseCourse,
+ import #{zen.fhir
+          hl7-fhir-r5-core.CodeableConcept
+          hl7-fhir-uv-extensions-r5.value-set.condition-course},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "The clinical course of the disease (how the disease behaves over time), such as acute versus chronic.",
+         :zen.fhir/type "CodeableConcept",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/condition-diseaseCourse",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.CodeableConcept/schema},
+         :zen.fhir/value-set {:symbol hl7-fhir-uv-extensions-r5.value-set.condition-course/value-set,
+                              :strength :example}}}

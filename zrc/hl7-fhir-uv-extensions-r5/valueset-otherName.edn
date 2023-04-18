@@ -1,0 +1,12 @@
+{ns hl7-fhir-uv-extensions-r5.valueset-otherName,
+ import #{hl7-fhir-r5-core.boolean zen.fhir hl7-fhir-r5-core.string},
+ schema {:zen.fhir/version "0.6.21-2",
+         :zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/valueset-otherName",
+         :require #{:name},
+         :type zen/map,
+         :zen/desc "Natural language names identifying the value set. These names should be usable as an identifier for the module by machine processing applications such as code generation.",
+         :keys {:name {:confirms #{hl7-fhir-r5-core.string/schema},
+                       :zen/desc "Support human navigation and code generation."},
+                :preferred {:confirms #{hl7-fhir-r5-core.boolean/schema},
+                            :zen/desc "Which name is preferred for this language"}}}}

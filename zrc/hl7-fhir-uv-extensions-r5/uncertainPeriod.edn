@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.uncertainPeriod,
+ import #{zen.fhir hl7-fhir-r5-core.Period},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "Used to express an uncertain date(+time) value by specifying an allowed or observed upper and lower bound.",
+         :zen.fhir/type "Period",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/uncertainPeriod",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.Period/schema}}}

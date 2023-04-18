@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.structuredefinition-summary,
+ import #{hl7-fhir-r5-core.markdown zen.fhir},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "Additional text for the summary presentation.",
+         :zen.fhir/type "markdown",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/structuredefinition-summary",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.markdown/schema}}}

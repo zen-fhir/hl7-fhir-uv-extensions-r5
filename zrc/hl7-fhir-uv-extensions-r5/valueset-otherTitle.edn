@@ -1,0 +1,12 @@
+{ns hl7-fhir-uv-extensions-r5.valueset-otherTitle,
+ import #{hl7-fhir-r5-core.boolean zen.fhir hl7-fhir-r5-core.string},
+ schema {:zen.fhir/version "0.6.21-2",
+         :zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/valueset-otherTitle",
+         :require #{:title},
+         :type zen/map,
+         :zen/desc "Human readable titles for the valueset.",
+         :keys {:title {:confirms #{hl7-fhir-r5-core.string/schema},
+                        :zen/desc "Human readable, short and specific"},
+                :preferred {:confirms #{hl7-fhir-r5-core.boolean/schema},
+                            :zen/desc "Which Title is preferred for this language"}}}}

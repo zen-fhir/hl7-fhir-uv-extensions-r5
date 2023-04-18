@@ -1,0 +1,33 @@
+{ns hl7-fhir-uv-extensions-r5.medication-manufacturingBatch,
+ import #{hl7-fhir-r5-core.Ratio
+          zen.fhir
+          hl7-fhir-r5-core.CodeableConcept
+          hl7-fhir-r5-core.string
+          hl7-fhir-r5-core.dateTime
+          hl7-fhir-r5-core.Organization
+          hl7-fhir-r5-core.Reference
+          hl7-fhir-r5-core.Extension
+          hl7-fhir-r5-core.Quantity},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "The date at which the drug substance or drug product was manufactured.  The specific operation/step in the process used to determine the date is specified by the manufacturingDateClassification element.",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch",
+         :zen.fhir/version "0.6.21-2",
+         :type zen/map,
+         :keys {:manufacturingDate {:confirms #{hl7-fhir-r5-core.dateTime/schema}},
+                :manufacturingDateClassification {:confirms #{hl7-fhir-r5-core.CodeableConcept/schema}},
+                :assignedManufacturer {:confirms #{hl7-fhir-r5-core.Reference/schema
+                                                   zen.fhir/Reference},
+                                       :zen.fhir/reference {:refers #{hl7-fhir-r5-core.Organization/schema}}},
+                :expirationDateClassification {:confirms #{hl7-fhir-r5-core.CodeableConcept/schema}},
+                :batchUtilization {:confirms #{hl7-fhir-r5-core.CodeableConcept/schema}},
+                :batchQuantity {:confirms #{hl7-fhir-r5-core.Quantity/schema}},
+                :additionalInformation {:confirms #{hl7-fhir-r5-core.string/schema}},
+                :container {:type zen/vector,
+                            :every {:confirms #{hl7-fhir-r5-core.Extension/schema},
+                                    :fhir/extensionUri "container",
+                                    :type zen/map,
+                                    :keys {:lotNumber {:confirms #{hl7-fhir-r5-core.string/schema}},
+                                           :type {:confirms #{hl7-fhir-r5-core.CodeableConcept/schema}},
+                                           :quantity {:confirms #{hl7-fhir-r5-core.Ratio/schema}},
+                                           :closureSystemDescription {:confirms #{hl7-fhir-r5-core.string/schema}},
+                                           :closureType {:confirms #{hl7-fhir-r5-core.CodeableConcept/schema}}}}}}}}

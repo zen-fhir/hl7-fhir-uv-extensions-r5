@@ -1,0 +1,19 @@
+{ns hl7-fhir-uv-extensions-r5.implementationguide-sourceFile,
+ import #{hl7-fhir-r5-core.boolean
+          zen.fhir
+          hl7-fhir-r5-core.string
+          hl7-fhir-r5-core.Reference},
+ schema {:zen.fhir/version "0.6.21-2",
+         :zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/implementationguide-sourceFile",
+         :require #{:file :location},
+         :type zen/map,
+         :zen/desc "Identifies files used as part of the the publication process other than resources referenced in definition.resource.",
+         :keys {:file {:confirms #{hl7-fhir-r5-core.Reference/schema
+                                   zen.fhir/Reference},
+                       :zen.fhir/reference {:refers #{}},
+                       :zen/desc "Location on server"},
+                :location {:confirms #{hl7-fhir-r5-core.string/schema},
+                           :zen/desc "Path for publisher"},
+                :keepAsResource {:confirms #{hl7-fhir-r5-core.boolean/schema},
+                                 :zen/desc "Use attachment or resource?"}}}}

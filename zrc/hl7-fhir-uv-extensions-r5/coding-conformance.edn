@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.coding-conformance,
+ import #{zen.fhir hl7-fhir-r5-core.canonical},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "Declares a profile that required the specific coding to be included in a list of Codings because of the binding. This allows reading applications to identify particular codings without processing the systems.",
+         :zen.fhir/type "canonical",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/coding-conformance",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.canonical/schema}}}

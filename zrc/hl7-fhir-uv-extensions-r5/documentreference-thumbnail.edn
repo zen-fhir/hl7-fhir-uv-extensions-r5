@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.documentreference-thumbnail,
+ import #{hl7-fhir-r5-core.boolean zen.fhir},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "True or False indicating whether this content is a thumbnail.",
+         :zen.fhir/type "boolean",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/documentreference-thumbnail",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.boolean/schema}}}

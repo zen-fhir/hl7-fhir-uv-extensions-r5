@@ -1,0 +1,27 @@
+{ns hl7-fhir-uv-extensions-r5.condition-occurredFollowing,
+ import #{hl7-fhir-r5-core.Condition
+          zen.fhir
+          hl7-fhir-r5-core.CodeableConcept
+          hl7-fhir-r5-core.MedicationStatement
+          hl7-fhir-r5-core.Reference
+          hl7-fhir-r5-core.Procedure
+          hl7-fhir-r5-core.MedicationAdministration
+          hl7-fhir-r5-core.Immunization
+          hl7-fhir-uv-extensions-r5.value-set.condition-predecessor},
+ schema {:fhir/polymorphic true,
+         :zen.fhir/version "0.6.21-2",
+         :zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/condition-occurredFollowing",
+         :type zen/map,
+         :zen/desc "Further conditions, problems, diagnoses, procedures or events or the substance that preceded this Condition.",
+         :keys {:CodeableConcept {:confirms #{hl7-fhir-r5-core.CodeableConcept/schema}},
+                :Reference {:confirms #{hl7-fhir-r5-core.Reference/schema
+                                        zen.fhir/Reference},
+                            :zen.fhir/reference {:refers #{hl7-fhir-r5-core.MedicationAdministration/schema
+                                                           hl7-fhir-r5-core.Procedure/schema
+                                                           hl7-fhir-r5-core.Condition/schema
+                                                           hl7-fhir-r5-core.Immunization/schema
+                                                           hl7-fhir-r5-core.MedicationStatement/schema}}}},
+         :zen.fhir/value-set {:symbol hl7-fhir-uv-extensions-r5.value-set.condition-predecessor/value-set,
+                              :strength :example},
+         :exclusive-keys #{#{:CodeableConcept :Reference}}}}

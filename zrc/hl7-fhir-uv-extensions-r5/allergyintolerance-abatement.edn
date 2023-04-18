@@ -1,0 +1,19 @@
+{ns hl7-fhir-uv-extensions-r5.allergyintolerance-abatement,
+ import #{hl7-fhir-r5-core.Age
+          zen.fhir
+          hl7-fhir-r5-core.string
+          hl7-fhir-r5-core.dateTime
+          hl7-fhir-r5-core.Period
+          hl7-fhir-r5-core.Range},
+ schema {:fhir/polymorphic true,
+         :zen.fhir/version "0.6.21-2",
+         :zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/allergyintolerance-abatement",
+         :type zen/map,
+         :zen/desc "The date or estimated date that the allergy or intolerance resolved. This is called abatement because of the many overloaded connotations associated with resolution.",
+         :keys {:dateTime {:confirms #{hl7-fhir-r5-core.dateTime/schema}},
+                :Age {:confirms #{hl7-fhir-r5-core.Age/schema}},
+                :Period {:confirms #{hl7-fhir-r5-core.Period/schema}},
+                :Range {:confirms #{hl7-fhir-r5-core.Range/schema}},
+                :string {:confirms #{hl7-fhir-r5-core.string/schema}}},
+         :exclusive-keys #{#{:string :dateTime :Range :Period :Age}}}}

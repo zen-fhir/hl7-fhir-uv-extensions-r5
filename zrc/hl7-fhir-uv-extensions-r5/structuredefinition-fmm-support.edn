@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.structuredefinition-fmm-support,
+ import #{hl7-fhir-r5-core.markdown zen.fhir},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "The documentation supporting the FMM level assigned to the artifact.",
+         :zen.fhir/type "markdown",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm-support",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.markdown/schema}}}

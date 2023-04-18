@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.observation-bodyPosition,
+ import #{zen.fhir hl7-fhir-r5-core.CodeableConcept},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "The position of the body when the observation was done, e.g. standing, sitting. To be used only when the body position in not precoordinated in the observation code.",
+         :zen.fhir/type "CodeableConcept",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/observation-bodyPosition",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.CodeableConcept/schema}}}

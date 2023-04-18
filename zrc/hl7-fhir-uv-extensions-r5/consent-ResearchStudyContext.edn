@@ -1,0 +1,9 @@
+{ns hl7-fhir-uv-extensions-r5.consent-ResearchStudyContext,
+ import #{zen.fhir hl7-fhir-r5-core.ResearchStudy},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "When a Research scope Consent, this is the specific research study that is allowed to use the information (or not).",
+         :zen.fhir/type "Reference",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/consent-ResearchStudyContext",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{zen.fhir/Reference},
+         :zen.fhir/reference {:refers #{hl7-fhir-r5-core.ResearchStudy/schema}}}}

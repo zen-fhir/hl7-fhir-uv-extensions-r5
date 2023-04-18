@@ -1,0 +1,17 @@
+{ns hl7-fhir-uv-extensions-r5.devicerequest-patientInstruction,
+ import #{zen.fhir
+          hl7-fhir-r5-core.string
+          hl7-fhir-r5-core.code
+          hl7-fhir-r5-core.value-set.languages},
+ schema {:zen.fhir/version "0.6.21-2",
+         :zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/devicerequest-patientInstruction",
+         :require #{:content :lang},
+         :type zen/map,
+         :zen/desc "Simple concise instructions to be read by the patient.  For example  “twice a day” rather than “BID.”.",
+         :keys {:lang {:confirms #{hl7-fhir-r5-core.code/schema},
+                       :zen.fhir/value-set {:symbol hl7-fhir-r5-core.value-set.languages/value-set,
+                                            :strength :preferred},
+                       :zen/desc "Language"},
+                :content {:confirms #{hl7-fhir-r5-core.string/schema},
+                          :zen/desc "Text"}}}}

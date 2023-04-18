@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.medicationdispense-quantityRemaining,
+ import #{zen.fhir hl7-fhir-r5-core.Quantity},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "The quanity left to be dispensed after a dispensing event.",
+         :zen.fhir/type "Quantity",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/medicationdispense-quantityRemaining",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.Quantity/schema}}}

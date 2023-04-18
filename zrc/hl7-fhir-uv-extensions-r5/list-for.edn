@@ -1,0 +1,22 @@
+{ns hl7-fhir-uv-extensions-r5.list-for,
+ import #{zen.fhir
+          hl7-fhir-r5-core.Practitioner
+          hl7-fhir-r5-core.Device
+          hl7-fhir-r5-core.Organization
+          hl7-fhir-r5-core.CareTeam
+          hl7-fhir-r5-core.RelatedPerson
+          hl7-fhir-r5-core.PractitionerRole
+          hl7-fhir-r5-core.Patient},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "Reference to the entity that this *List* is for.",
+         :zen.fhir/type "Reference",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/list-for",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{zen.fhir/Reference},
+         :zen.fhir/reference {:refers #{hl7-fhir-r5-core.Patient/schema
+                                        hl7-fhir-r5-core.CareTeam/schema
+                                        hl7-fhir-r5-core.PractitionerRole/schema
+                                        hl7-fhir-r5-core.Organization/schema
+                                        hl7-fhir-r5-core.Device/schema
+                                        hl7-fhir-r5-core.Practitioner/schema
+                                        hl7-fhir-r5-core.RelatedPerson/schema}}}}

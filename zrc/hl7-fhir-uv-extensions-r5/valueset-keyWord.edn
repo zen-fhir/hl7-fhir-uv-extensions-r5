@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.valueset-keyWord,
+ import #{zen.fhir hl7-fhir-r5-core.string},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "Word or words used in an information retrieval system to indicate the content of the value set. (deprecated)",
+         :zen.fhir/type "string",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/valueset-keyWord",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.string/schema}}}

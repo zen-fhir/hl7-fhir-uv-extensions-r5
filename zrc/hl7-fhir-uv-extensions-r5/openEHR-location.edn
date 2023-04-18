@@ -1,0 +1,12 @@
+{ns hl7-fhir-uv-extensions-r5.openEHR-location,
+ import #{zen.fhir
+          hl7-fhir-r5-core.CodeableConcept
+          hl7-fhir-r5-core.value-set.body-site},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "The anatomical location / body site(s) where the symptoms manifested.",
+         :zen.fhir/type "CodeableConcept",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/openEHR-location",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.CodeableConcept/schema},
+         :zen.fhir/value-set {:symbol hl7-fhir-r5-core.value-set.body-site/value-set,
+                              :strength :extensible}}}

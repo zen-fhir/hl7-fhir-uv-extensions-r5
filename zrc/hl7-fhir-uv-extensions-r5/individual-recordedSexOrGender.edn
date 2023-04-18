@@ -1,0 +1,38 @@
+{ns hl7-fhir-uv-extensions-r5.individual-recordedSexOrGender,
+ import #{hl7-fhir-r5-core.value-set.administrative-gender
+          hl7-fhir-r5-core.CodeableReference
+          zen.fhir
+          hl7-fhir-r5-core.CodeableConcept
+          hl7-fhir-r5-core.string
+          hl7-fhir-r5-core.value-set.jurisdiction
+          hl7-fhir-uv-extensions-r5.value-set.recorded-sex-or-gender-type
+          hl7-fhir-r5-core.dateTime
+          hl7-fhir-r5-core.Period},
+ schema {:zen.fhir/version "0.6.21-2",
+         :zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender",
+         :require #{:value},
+         :type zen/map,
+         :zen/desc "Recorded sex or gender (RSG) information includes the various sex and gender concepts that are often used in existing systems but are known NOT to represent a gender identity, sex parameter for clinical use, or attributes related to sexuality, such as sexual orientation, sexual activity, or sexual attraction. Examples of recorded sex or gender concepts include administrative gender, administrative sex, and sex assigned at birth.  When exchanging this concept, refer to the guidance in the [Gender Harmony Implementation Guide](http://hl7.org/xprod/ig/uv/gender-harmony/).",
+         :keys {:value {:confirms #{hl7-fhir-r5-core.CodeableConcept/schema},
+                        :zen.fhir/value-set {:symbol hl7-fhir-r5-core.value-set.administrative-gender/value-set,
+                                             :strength :example},
+                        :zen/desc "The recorded sex or gender property for the individual"},
+                :type {:confirms #{hl7-fhir-r5-core.CodeableConcept/schema},
+                       :zen.fhir/value-set {:symbol hl7-fhir-uv-extensions-r5.value-set.recorded-sex-or-gender-type/value-set,
+                                            :strength :example},
+                       :zen/desc "Type of recorded sex or gender."},
+                :effectivePeriod {:confirms #{hl7-fhir-r5-core.Period/schema},
+                                  :zen/desc "When the recorded sex or gender value applies"},
+                :acquisitionDate {:confirms #{hl7-fhir-r5-core.dateTime/schema},
+                                  :zen/desc "When the sex or gender value was recorded."},
+                :sourceDocument {:confirms #{hl7-fhir-r5-core.CodeableReference/schema},
+                                 :zen/desc "The document the sex or gender property was acquired from."},
+                :sourceField {:confirms #{hl7-fhir-r5-core.string/schema},
+                              :zen/desc "The name of the field within the source document where this sex or gender property is initially recorded."},
+                :jurisdiction {:confirms #{hl7-fhir-r5-core.CodeableConcept/schema},
+                               :zen.fhir/value-set {:symbol hl7-fhir-r5-core.value-set.jurisdiction/value-set,
+                                                    :strength :extensible},
+                               :zen/desc "Who issued the document where the sex or gender was aquired"},
+                :comment {:confirms #{hl7-fhir-r5-core.string/schema},
+                          :zen/desc "Context or source information about the recorded sex or gender"}}}}

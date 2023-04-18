@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.cqf-initialValue,
+ import #{zen.fhir hl7-fhir-r5-core.Expression},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "An expression that determines an initial value. The expression may be simply the name of a expression in a referenced library, or it may be a complete inline expression.",
+         :zen.fhir/type "Expression",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/cqf-initialValue",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.Expression/schema}}}

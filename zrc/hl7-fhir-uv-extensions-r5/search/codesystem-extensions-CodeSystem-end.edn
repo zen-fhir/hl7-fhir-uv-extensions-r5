@@ -1,0 +1,13 @@
+{ns hl7-fhir-uv-extensions-r5.search.codesystem-extensions-CodeSystem-end,
+ import #{zen.fhir},
+ search {:zen/tags #{zen.fhir/search},
+         :fhir/id "codesystem-extensions-CodeSystem-end",
+         :fhir/url "http://hl7.org/fhir/SearchParameter/codesystem-extensions-CodeSystem-end",
+         :fhir/type "date",
+         :name "end",
+         :expr {:CodeSystem {:knife [["extension('http://hl7.org/fhir/StructureDefinition/codesystem-expirationDate'"
+                                      "value"]],
+                             :jsonpath ["$.\"extension('http://hl7.org/fhir/StructureDefinition/codesystem-expirationDate'\".\"value\"[*]"],
+                             :data-types #{},
+                             :template :date,
+                             :sql {:where [:or]}}}}}

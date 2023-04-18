@@ -1,0 +1,8 @@
+{ns hl7-fhir-uv-extensions-r5.artifact-periodDuration,
+ import #{zen.fhir hl7-fhir-r5-core.Duration},
+ schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen/desc "Specifies the duration of the period, based on the starting date, rather than specifying the end date of the period.",
+         :zen.fhir/type "Duration",
+         :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/artifact-periodDuration",
+         :zen.fhir/version "0.6.21-2",
+         :confirms #{hl7-fhir-r5-core.Duration/schema}}}
