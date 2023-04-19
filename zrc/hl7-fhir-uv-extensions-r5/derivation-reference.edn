@@ -6,7 +6,7 @@
  schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
          :zen/desc "References a location within a set of source text from which the discrete information described by this Resource/Element was extracted.",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/derivation-reference",
-         :zen.fhir/version "0.6.21-2",
+         :zen.fhir/version "0.6.22",
          :type zen/map,
          :keys {:reference {:confirms #{hl7-fhir-r5-core.Reference/schema
                                         zen.fhir/Reference},

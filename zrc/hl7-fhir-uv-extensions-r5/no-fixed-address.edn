@@ -4,5 +4,5 @@
          :zen/desc "This extension applies to the Address data type and is used to indicate that a location address is not a fixed address for an individual.",
          :zen.fhir/type "boolean",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/no-fixed-address",
-         :zen.fhir/version "0.6.21-2",
+         :zen.fhir/version "0.6.22",
          :confirms #{hl7-fhir-r5-core.boolean/schema}}}

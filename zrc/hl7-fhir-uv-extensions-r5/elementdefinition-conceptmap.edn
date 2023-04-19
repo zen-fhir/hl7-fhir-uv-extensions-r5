@@ -4,5 +4,5 @@
          :zen/desc "This extension references a ConceptMap that maps to relevant terminologies used in an implementation.",
          :zen.fhir/type "canonical",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/elementdefinition-conceptmap",
-         :zen.fhir/version "0.6.21-2",
+         :zen.fhir/version "0.6.22",
          :confirms #{hl7-fhir-r5-core.canonical/schema}}}

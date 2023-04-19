@@ -5,7 +5,7 @@
           hl7-fhir-r5-core.value-set.constraint-severity
           hl7-fhir-r5-core.Expression
           hl7-fhir-r5-core.id},
- schema {:zen.fhir/version "0.6.21-2",
+ schema {:zen.fhir/version "0.6.22",
          :zen/tags #{zen/schema zen.fhir/structure-schema},
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/cqf-targetInvariant",
          :require #{:expression :key :severity},

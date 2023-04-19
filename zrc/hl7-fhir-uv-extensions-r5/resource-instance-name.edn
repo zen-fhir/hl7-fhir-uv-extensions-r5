@@ -4,5 +4,5 @@
          :zen/desc "A natural language name for non-conformance and non-terminology resource instances that is represented in the resource for publication use.",
          :zen.fhir/type "string",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/resource-instance-name",
-         :zen.fhir/version "0.6.21-2",
+         :zen.fhir/version "0.6.22",
          :confirms #{hl7-fhir-r5-core.string/schema}}}

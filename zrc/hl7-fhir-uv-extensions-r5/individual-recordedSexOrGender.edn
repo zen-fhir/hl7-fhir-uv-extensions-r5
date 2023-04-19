@@ -8,7 +8,7 @@
           hl7-fhir-uv-extensions-r5.value-set.recorded-sex-or-gender-type
           hl7-fhir-r5-core.dateTime
           hl7-fhir-r5-core.Period},
- schema {:zen.fhir/version "0.6.21-2",
+ schema {:zen.fhir/version "0.6.22",
          :zen/tags #{zen/schema zen.fhir/structure-schema},
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender",
          :require #{:value},

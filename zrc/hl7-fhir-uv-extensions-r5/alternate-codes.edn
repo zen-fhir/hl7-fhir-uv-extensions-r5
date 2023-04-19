@@ -4,5 +4,5 @@
          :zen/desc " Indicates alternate codings and/or original text for the concept represented by the code.",
          :zen.fhir/type "CodeableConcept",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/alternate-codes",
-         :zen.fhir/version "0.6.21-2",
+         :zen.fhir/version "0.6.22",
          :confirms #{hl7-fhir-r5-core.CodeableConcept/schema}}}
