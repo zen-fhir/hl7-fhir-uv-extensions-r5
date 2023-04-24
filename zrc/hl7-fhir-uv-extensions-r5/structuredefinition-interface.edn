@@ -4,5 +4,5 @@
          :zen/desc "Marks that the resource definition represents an [interface](uml.html#interface) rather than a resource.",
          :zen.fhir/type "boolean",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/structuredefinition-interface",
-         :zen.fhir/version "0.6.22",
+         :zen.fhir/version "0.6.22-1",
          :confirms #{hl7-fhir-r5-core.boolean/schema}}}

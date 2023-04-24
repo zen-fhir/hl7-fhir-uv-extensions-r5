@@ -6,7 +6,7 @@
          :zen/desc "Defines a knowledge capability afforded by this knowledge artifact.",
          :zen.fhir/type "code",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
-         :zen.fhir/version "0.6.22",
+         :zen.fhir/version "0.6.22-1",
          :confirms #{hl7-fhir-r5-core.code/schema},
          :zen.fhir/value-set {:symbol hl7-fhir-uv-extensions-r5.value-set.knowledge-capability/value-set,
                               :strength :required}}}

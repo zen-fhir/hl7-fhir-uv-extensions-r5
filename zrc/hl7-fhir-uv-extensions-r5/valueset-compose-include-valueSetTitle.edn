@@ -4,5 +4,5 @@
          :zen/desc "Human readable name for the included Value Set.",
          :zen.fhir/type "string",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/valueset-compose-include-valueSetTitle",
-         :zen.fhir/version "0.6.22",
+         :zen.fhir/version "0.6.22-1",
          :confirms #{hl7-fhir-r5-core.string/schema}}}

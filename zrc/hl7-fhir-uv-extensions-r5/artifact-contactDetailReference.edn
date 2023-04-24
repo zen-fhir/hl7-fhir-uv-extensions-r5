@@ -9,7 +9,7 @@
          :zen/desc "A reference to a resource that is a more detailed representation of the contact detail information.",
          :zen.fhir/type "Reference",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/artifact-contactDetailReference",
-         :zen.fhir/version "0.6.22",
+         :zen.fhir/version "0.6.22-1",
          :confirms #{zen.fhir/Reference},
          :zen.fhir/reference {:refers #{hl7-fhir-r5-core.Patient/schema
                                         hl7-fhir-r5-core.PractitionerRole/schema

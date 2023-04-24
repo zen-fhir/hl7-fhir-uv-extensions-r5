@@ -4,5 +4,5 @@
          :zen/desc "The value of an integer that exceeds the bounds of the base int type.",
          :zen.fhir/type "decimal",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/largeValue",
-         :zen.fhir/version "0.6.22",
+         :zen.fhir/version "0.6.22-1",
          :confirms #{hl7-fhir-r5-core.decimal/schema}}}
