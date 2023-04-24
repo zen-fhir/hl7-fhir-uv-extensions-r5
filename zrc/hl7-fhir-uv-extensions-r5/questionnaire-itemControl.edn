@@ -6,7 +6,7 @@
          :zen/desc "The type of data entry control or structure that should be used to render the item.  Certain item controls only make sense for certain types of items.  For example, a radio button doesn't make sense for a question where repeats=true; few systems will know how to implement a 'slider' control if the question type is 'Attachment', etc.  Form fillers are allowed to ignore item controls that don't make sense (or that they don't know how to handle) for the type of item the extension appears on.  If the extension is ignored, the form filler will use whatever display control it supports that works best for the type of item present.  Similarly, form authoring tools may raise validation issues or prohibit the selection of certain control types based on the characteristics of the item.",
          :zen.fhir/type "CodeableConcept",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-         :zen.fhir/version "0.6.22-1",
+         :zen.fhir/version "0.6.22-2",
          :confirms #{hl7-fhir-r5-core.CodeableConcept/schema},
          :zen.fhir/value-set {:symbol hl7-fhir-uv-extensions-r5.value-set.questionnaire-item-control/value-set,
                               :strength :extensible}}}

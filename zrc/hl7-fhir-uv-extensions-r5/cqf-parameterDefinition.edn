@@ -4,5 +4,5 @@
          :zen/desc "The definition of a parameter that is expected to be provided as part of the invocation of the trigger.",
          :zen.fhir/type "ParameterDefinition",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/cqf-parameterDefinition",
-         :zen.fhir/version "0.6.22-1",
+         :zen.fhir/version "0.6.22-2",
          :confirms #{hl7-fhir-r5-core.ParameterDefinition/schema}}}

@@ -4,5 +4,5 @@
          :zen/desc "Indicates that the server supports the given version of Clinical Quality Language (CQL). Valid values are major.minor and optionally the patch version of any published version of the CQL specification.",
          :zen.fhir/type "string",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/cqf-supportedCqlVersion",
-         :zen.fhir/version "0.6.22-1",
+         :zen.fhir/version "0.6.22-2",
          :confirms #{hl7-fhir-r5-core.string/schema}}}

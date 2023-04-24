@@ -4,5 +4,5 @@
          :zen/desc "An individual or organization responsible for officially endorsing the {{title}} for use in some setting.",
          :zen.fhir/type "ContactDetail",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
-         :zen.fhir/version "0.6.22-1",
+         :zen.fhir/version "0.6.22-2",
          :confirms #{hl7-fhir-r5-core.ContactDetail/schema}}}
