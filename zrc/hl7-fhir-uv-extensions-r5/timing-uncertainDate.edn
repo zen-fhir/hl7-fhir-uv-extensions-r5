@@ -4,5 +4,5 @@
          :zen/desc "When present, this extension indicates that the date of a period start or end is uncertain and falls within its own period.",
          :zen.fhir/type "Period",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/timing-uncertainDate",
-         :zen.fhir/version "0.6.23",
+         :zen.fhir/version "0.6.23-1",
          :confirms #{hl7-fhir-r5-core.Period/schema}}}

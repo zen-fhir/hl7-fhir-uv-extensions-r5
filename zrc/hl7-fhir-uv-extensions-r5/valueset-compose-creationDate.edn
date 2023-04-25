@@ -4,5 +4,5 @@
          :zen/desc "Date the compose was created.",
          :zen.fhir/type "string",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/valueset-compose-creationDate",
-         :zen.fhir/version "0.6.23",
+         :zen.fhir/version "0.6.23-1",
          :confirms #{hl7-fhir-r5-core.string/schema}}}

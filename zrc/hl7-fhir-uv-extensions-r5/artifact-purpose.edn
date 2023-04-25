@@ -4,5 +4,5 @@
          :zen/desc "Explanation of why this {{title}} is needed and why it has been designed as it has.",
          :zen.fhir/type "markdown",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/artifact-purpose",
-         :zen.fhir/version "0.6.23",
+         :zen.fhir/version "0.6.23-1",
          :confirms #{hl7-fhir-r5-core.markdown/schema}}}

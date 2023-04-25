@@ -1,7 +1,7 @@
 {ns hl7-fhir-uv-extensions-r5.originalText,
  import #{zen.fhir hl7-fhir-r5-core.string hl7-fhir-r5-core.url},
  schema {:fhir/polymorphic true,
-         :zen.fhir/version "0.6.23",
+         :zen.fhir/version "0.6.23-1",
          :zen/tags #{zen/schema zen.fhir/structure-schema},
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/originalText",
          :type zen/map,

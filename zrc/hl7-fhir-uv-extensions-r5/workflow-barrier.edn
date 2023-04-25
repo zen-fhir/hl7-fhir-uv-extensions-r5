@@ -6,7 +6,7 @@
          :zen/desc "Any obstacle that limits or prevents obtaining care.  Barriers in health and social care include, but are not limited to, physical barriers, psychological barriers, physiological barriers, financial barriers, geographical barriers, cultural/language barriers and resource barriers.",
          :zen.fhir/type "CodeableReference",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/workflow-barrier",
-         :zen.fhir/version "0.6.23",
+         :zen.fhir/version "0.6.23-1",
          :confirms #{hl7-fhir-r5-core.CodeableReference/schema},
          :zen.fhir/value-set {:symbol hl7-fhir-uv-extensions-r5.value-set.barrier/value-set,
                               :strength :example}}}

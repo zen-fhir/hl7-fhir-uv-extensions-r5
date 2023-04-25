@@ -4,5 +4,5 @@
          :zen/desc "Used when the target of the reference has a type that is not allowed by the definition of the element. In general, this should only arise when wrangling between versions using cross-version extensions.",
          :zen.fhir/type "canonical",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/alternate-canonical",
-         :zen.fhir/version "0.6.23",
+         :zen.fhir/version "0.6.23-1",
          :confirms #{hl7-fhir-r5-core.canonical/schema}}}

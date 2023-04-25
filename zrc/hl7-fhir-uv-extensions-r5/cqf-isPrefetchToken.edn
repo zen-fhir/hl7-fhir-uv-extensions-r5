@@ -4,5 +4,5 @@
          :zen/desc "Allows an indication of whether this parameter can be used to parameterize prefetch templates (i.e. queries that can be used to identify data-of-interest to be sent as part of a triggered request.",
          :zen.fhir/type "boolean",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/cqf-isPrefetchToken",
-         :zen.fhir/version "0.6.23",
+         :zen.fhir/version "0.6.23-1",
          :confirms #{hl7-fhir-r5-core.boolean/schema}}}
