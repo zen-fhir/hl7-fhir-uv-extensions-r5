@@ -4,5 +4,5 @@
          :zen/desc "A pattern that all the target resources follow - that is, a pattern that they all declare their relationship to.",
          :zen.fhir/type "canonical",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/elementdefinition-pattern",
-         :zen.fhir/version "0.6.22-2",
+         :zen.fhir/version "0.6.23",
          :confirms #{hl7-fhir-r5-core.canonical/schema}}}

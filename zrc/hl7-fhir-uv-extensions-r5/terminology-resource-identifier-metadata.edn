@@ -3,7 +3,7 @@
  schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
          :zen/desc "Additional metadata in identifier elements for terminology resources.",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/terminology-resource-identifier-metadata",
-         :zen.fhir/version "0.6.22-2",
+         :zen.fhir/version "0.6.23",
          :type zen/map,
          :keys {:preferred {:confirms #{hl7-fhir-r5-core.boolean/schema},
                             :zen/desc "Whether this an identifier that should be used"},

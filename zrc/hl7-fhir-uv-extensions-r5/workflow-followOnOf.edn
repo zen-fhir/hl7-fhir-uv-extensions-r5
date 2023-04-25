@@ -4,6 +4,6 @@
          :zen/desc "Points to a preceding event within a workflow that was a prerequisite for or provides other justification for the current action.",
          :zen.fhir/type "Reference",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/workflow-followOnOf",
-         :zen.fhir/version "0.6.22-2",
+         :zen.fhir/version "0.6.23",
          :confirms #{zen.fhir/Reference},
          :zen.fhir/reference {:refers #{}}}}

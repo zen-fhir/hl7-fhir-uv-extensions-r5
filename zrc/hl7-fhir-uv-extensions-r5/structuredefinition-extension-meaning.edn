@@ -4,5 +4,5 @@
          :zen/desc "This extension allows conveying the coded meaning of the extension in instances of the extension",
          :zen.fhir/type "CodeableConcept",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/structuredefinition-extension-meaning",
-         :zen.fhir/version "0.6.22-2",
+         :zen.fhir/version "0.6.23",
          :confirms #{hl7-fhir-r5-core.CodeableConcept/schema}}}

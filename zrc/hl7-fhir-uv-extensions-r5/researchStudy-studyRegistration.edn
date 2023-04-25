@@ -4,7 +4,7 @@
           zen.fhir
           hl7-fhir-r5-core.CodeableConcept
           hl7-fhir-r5-core.Period},
- schema {:zen.fhir/version "0.6.22-2",
+ schema {:zen.fhir/version "0.6.23",
          :zen/tags #{zen/schema zen.fhir/structure-schema},
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/researchStudy-studyRegistration",
          :require #{:activity},
