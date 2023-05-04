@@ -4,5 +4,5 @@
          :zen/desc "This specifies the definition for a parameter if needed. This is useful for communicating the type of a parameter when the parameter has no value.",
          :zen.fhir/type "ParameterDefinition",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/parameters-definition",
-         :zen.fhir/version "0.6.23-1",
+         :zen.fhir/version "0.6.24",
          :confirms #{hl7-fhir-r5-core.ParameterDefinition/schema}}}

@@ -4,5 +4,5 @@
          :zen/desc "Where a patient is a part of a multiple birth, this is the total number of births that occurred in this pregnancy.\r\rThis value is the 4 in '3 of *4*', and the 3 would be the Patient.multipleBirth value.",
          :zen.fhir/type "positiveInt",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/patient-multipleBirthTotal",
-         :zen.fhir/version "0.6.23-1",
+         :zen.fhir/version "0.6.24",
          :confirms #{hl7-fhir-r5-core.positiveInt/schema}}}

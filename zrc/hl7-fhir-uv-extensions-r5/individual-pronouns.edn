@@ -4,7 +4,7 @@
           hl7-fhir-r5-core.string
           hl7-fhir-uv-extensions-r5.value-set.pronouns
           hl7-fhir-r5-core.Period},
- schema {:zen.fhir/version "0.6.23-1",
+ schema {:zen.fhir/version "0.6.24",
          :zen/tags #{zen/schema zen.fhir/structure-schema},
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/individual-pronouns",
          :require #{:value},

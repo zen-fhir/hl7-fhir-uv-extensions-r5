@@ -9,7 +9,7 @@
           hl7-fhir-r5-core.Immunization
           hl7-fhir-uv-extensions-r5.value-set.condition-predecessor},
  schema {:fhir/polymorphic true,
-         :zen.fhir/version "0.6.23-1",
+         :zen.fhir/version "0.6.24",
          :zen/tags #{zen/schema zen.fhir/structure-schema},
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/condition-occurredFollowing",
          :type zen/map,

@@ -6,7 +6,7 @@
          :zen/desc "The FHIR type of a property - used on the value property of a primitive type (for which there is no type in the FHIR typing system), and Element.id, Resource.id, and Extension.url. All of these have a non-FHIR type in thir structure definition, and this specifies the applicable FHIR type.",
          :zen.fhir/type "url",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-         :zen.fhir/version "0.6.23-1",
+         :zen.fhir/version "0.6.24",
          :confirms #{hl7-fhir-r5-core.url/schema},
          :zen.fhir/value-set {:symbol hl7-fhir-r5-core.value-set.data-types/value-set,
                               :strength :required}}}
