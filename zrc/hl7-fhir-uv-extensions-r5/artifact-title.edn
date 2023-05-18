@@ -4,5 +4,5 @@
          :zen/desc "A short, descriptive, user-friendly title for the {{title}}.",
          :zen.fhir/type "string",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/artifact-title",
-         :zen.fhir/version "0.6.24",
+         :zen.fhir/version "0.6.25-1",
          :confirms #{hl7-fhir-r5-core.string/schema}}}

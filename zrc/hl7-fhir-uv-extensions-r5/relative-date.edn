@@ -8,7 +8,7 @@
           hl7-fhir-r5-core.Extension
           hl7-fhir-r5-core.Duration
           hl7-fhir-r5-core.Range},
- schema {:zen.fhir/version "0.6.24",
+ schema {:zen.fhir/version "0.6.25-1",
          :zen/tags #{zen/schema zen.fhir/structure-schema},
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/relative-date",
          :require #{:offset

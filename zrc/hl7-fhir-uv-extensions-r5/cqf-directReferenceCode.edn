@@ -4,5 +4,5 @@
          :zen/desc "Defines a code directly referenced by artifact logic, as opposed to a value set. Direct reference codes may be the target of data requirements.",
          :zen.fhir/type "Coding",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
-         :zen.fhir/version "0.6.24",
+         :zen.fhir/version "0.6.25-1",
          :confirms #{hl7-fhir-r5-core.Coding/schema}}}

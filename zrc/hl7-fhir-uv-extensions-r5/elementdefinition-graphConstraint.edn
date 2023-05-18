@@ -4,5 +4,5 @@
          :zen/desc "Will cause a GraphDefinition to be executed and the referred-to instance be considered \"valid\" for that GraphDefinition if the instance is the start of a result of executing that GraphDefinition.",
          :zen.fhir/type "canonical",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/elementdefinition-graphConstraint",
-         :zen.fhir/version "0.6.24",
+         :zen.fhir/version "0.6.25-1",
          :confirms #{hl7-fhir-r5-core.canonical/schema}}}

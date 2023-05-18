@@ -4,5 +4,5 @@
          :zen/desc "When the contribution was made by this contributor.",
          :zen.fhir/type "dateTime",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/cqf-contributionTime",
-         :zen.fhir/version "0.6.24",
+         :zen.fhir/version "0.6.25-1",
          :confirms #{hl7-fhir-r5-core.dateTime/schema}}}

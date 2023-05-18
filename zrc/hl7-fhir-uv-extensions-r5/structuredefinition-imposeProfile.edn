@@ -4,5 +4,5 @@
          :zen/desc "Instances can only be valid against this profile, if they also successfully validate against the profile referenced by this extension.",
          :zen.fhir/type "canonical",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile",
-         :zen.fhir/version "0.6.24",
+         :zen.fhir/version "0.6.25-1",
          :confirms #{hl7-fhir-r5-core.canonical/schema}}}
