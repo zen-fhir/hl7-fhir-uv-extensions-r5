@@ -6,7 +6,7 @@
          :zen/desc "A reason that this coding is present.",
          :zen.fhir/type "Coding",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/coding-purpose",
-         :zen.fhir/version "0.6.25-1",
+         :zen.fhir/version "0.6.27",
          :confirms #{hl7-fhir-r5-core.Coding/schema},
          :zen.fhir/value-set {:symbol hl7-fhir-uv-extensions-r5.value-set.coding-purpose/value-set,
                               :strength :extensible}}}

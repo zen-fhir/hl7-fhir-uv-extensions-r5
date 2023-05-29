@@ -4,5 +4,5 @@
          :zen/desc "A copyright statement relating to the {{title}} and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the {{title}}.",
          :zen.fhir/type "markdown",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/artifact-copyright",
-         :zen.fhir/version "0.6.25-1",
+         :zen.fhir/version "0.6.27",
          :confirms #{hl7-fhir-r5-core.markdown/schema}}}

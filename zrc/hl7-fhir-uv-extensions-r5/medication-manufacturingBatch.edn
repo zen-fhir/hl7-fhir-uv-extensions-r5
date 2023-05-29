@@ -11,7 +11,7 @@
  schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
          :zen/desc "The date at which the drug substance or drug product was manufactured.  The specific operation/step in the process used to determine the date is specified by the manufacturingDateClassification element.",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch",
-         :zen.fhir/version "0.6.25-1",
+         :zen.fhir/version "0.6.27",
          :type zen/map,
          :keys {:manufacturingDate {:confirms #{hl7-fhir-r5-core.dateTime/schema}},
                 :manufacturingDateClassification {:confirms #{hl7-fhir-r5-core.CodeableConcept/schema}},
