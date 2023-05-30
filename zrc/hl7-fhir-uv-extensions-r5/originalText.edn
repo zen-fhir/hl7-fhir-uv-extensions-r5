@@ -1,8 +1,10 @@
 {ns hl7-fhir-uv-extensions-r5.originalText,
  import #{zen.fhir hl7-fhir-r5-core.string hl7-fhir-r5-core.url},
  schema {:fhir/polymorphic true,
-         :zen.fhir/version "0.6.27",
-         :zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen.fhir/version "0.6.28",
+         :zen/tags #{zen.fhir/extension
+                     zen/schema
+                     zen.fhir/structure-schema},
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/originalText",
          :type zen/map,
          :zen/desc "A human language representation of the concept (resource/element) as seen/selected/uttered by the user who entered the data and/or which represents the full intended meaning of the user. This can be provided either directly as text, or as a url that is a reference to a portion of the narrative of a resource ([DomainResource.text](narrative.html) or [Composition.section.text](composition-definitions.html#Composition.section.text)). When it a url, the value should end with a #{id} where the id identifies a specific portion of the referenced content (via an XHTML id attribute).",

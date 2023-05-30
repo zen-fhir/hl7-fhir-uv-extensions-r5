@@ -1,8 +1,10 @@
 {ns hl7-fhir-uv-extensions-r5.elementdefinition-minValueSet,
  import #{zen.fhir hl7-fhir-r5-core.canonical hl7-fhir-r5-core.uri},
  schema {:fhir/polymorphic true,
-         :zen.fhir/version "0.6.27",
-         :zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen.fhir/version "0.6.28",
+         :zen/tags #{zen.fhir/extension
+                     zen/schema
+                     zen.fhir/structure-schema},
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet",
          :type zen/map,
          :zen/desc "The minimum allowable value set, for use when the binding strength is 'required' or 'extensible'. This value set is the minimum value set that any conformant system SHALL support.",

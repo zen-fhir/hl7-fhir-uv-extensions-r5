@@ -1,8 +1,10 @@
 {ns hl7-fhir-uv-extensions-r5.structuredefinition-conformance-derivedFrom,
  import #{zen.fhir hl7-fhir-r5-core.canonical},
- schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+ schema {:zen/tags #{zen.fhir/extension
+                     zen/schema
+                     zen.fhir/structure-schema},
          :zen/desc "Indicates one of the resources that was used to infer the specified maturity or standards status",
          :zen.fhir/type "canonical",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-         :zen.fhir/version "0.6.27",
+         :zen.fhir/version "0.6.28",
          :confirms #{hl7-fhir-r5-core.canonical/schema}}}

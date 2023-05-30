@@ -2,7 +2,7 @@
  import #{zen.fhir},
  value-set {:zen/tags #{zen.fhir/value-set},
             :zen/desc "Codes that indicate a individual's gender identity. This value set is a minimum set of commonly used values.  It is expected and encouraged that specific jurisdictions or communities will use additional gender identity concepts that are relevant within their community.",
-            :zen.fhir/version "0.6.27",
+            :zen.fhir/version "0.6.28",
             :fhir/code-systems #{{:fhir/url "http://terminology.hl7.org/CodeSystem/data-absent-reason",
                                   :zen.fhir/content :bundled}
                                  {:fhir/url "http://snomed.info/sct",

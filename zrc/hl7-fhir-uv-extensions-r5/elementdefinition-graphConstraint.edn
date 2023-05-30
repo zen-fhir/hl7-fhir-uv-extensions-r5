@@ -1,8 +1,10 @@
 {ns hl7-fhir-uv-extensions-r5.elementdefinition-graphConstraint,
  import #{zen.fhir hl7-fhir-r5-core.canonical},
- schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+ schema {:zen/tags #{zen.fhir/extension
+                     zen/schema
+                     zen.fhir/structure-schema},
          :zen/desc "Will cause a GraphDefinition to be executed and the referred-to instance be considered \"valid\" for that GraphDefinition if the instance is the start of a result of executing that GraphDefinition.",
          :zen.fhir/type "canonical",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/elementdefinition-graphConstraint",
-         :zen.fhir/version "0.6.27",
+         :zen.fhir/version "0.6.28",
          :confirms #{hl7-fhir-r5-core.canonical/schema}}}

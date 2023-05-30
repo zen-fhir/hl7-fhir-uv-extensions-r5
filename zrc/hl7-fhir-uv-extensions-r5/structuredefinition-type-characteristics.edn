@@ -2,11 +2,13 @@
  import #{zen.fhir
           hl7-fhir-uv-extensions-r5.value-set.type-characteristics-code
           hl7-fhir-r5-core.code},
- schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+ schema {:zen/tags #{zen.fhir/extension
+                     zen/schema
+                     zen.fhir/structure-schema},
          :zen/desc "A code that indicates that a particular type characteristic and it's associated element definition aspects apply to this type",
          :zen.fhir/type "code",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
-         :zen.fhir/version "0.6.27",
+         :zen.fhir/version "0.6.28",
          :confirms #{hl7-fhir-r5-core.code/schema},
          :zen.fhir/value-set {:symbol hl7-fhir-uv-extensions-r5.value-set.type-characteristics-code/value-set,
                               :strength :required}}}

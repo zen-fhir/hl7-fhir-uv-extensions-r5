@@ -10,11 +10,13 @@
           hl7-fhir-r5-core.PractitionerRole
           hl7-fhir-r5-core.HealthcareService
           hl7-fhir-r5-core.Patient},
- schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+ schema {:zen/tags #{zen.fhir/extension
+                     zen/schema
+                     zen.fhir/structure-schema},
          :zen/desc "The person in the receiving organization that will receive the response.",
          :zen.fhir/type "Reference",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/cqf-receivingPerson",
-         :zen.fhir/version "0.6.27",
+         :zen.fhir/version "0.6.28",
          :confirms #{zen.fhir/Reference},
          :zen.fhir/reference {:refers #{hl7-fhir-r5-core.Patient/schema
                                         hl7-fhir-r5-core.CareTeam/schema

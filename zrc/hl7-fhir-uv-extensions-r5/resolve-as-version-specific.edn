@@ -1,8 +1,10 @@
 {ns hl7-fhir-uv-extensions-r5.resolve-as-version-specific,
  import #{hl7-fhir-r5-core.boolean zen.fhir},
- schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+ schema {:zen/tags #{zen.fhir/extension
+                     zen/schema
+                     zen.fhir/structure-schema},
          :zen/desc "If true, indicates that the reference should be resolved to a version-specific reference rather than a version-agnostic reference.",
          :zen.fhir/type "boolean",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/resolve-as-version-specific",
-         :zen.fhir/version "0.6.27",
+         :zen.fhir/version "0.6.28",
          :confirms #{hl7-fhir-r5-core.boolean/schema}}}

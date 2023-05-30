@@ -5,8 +5,10 @@
           hl7-fhir-r5-core.string
           hl7-fhir-r5-core.Period
           hl7-fhir-uv-extensions-r5.value-set.sex-parameter-for-clinical-use},
- schema {:zen.fhir/version "0.6.27",
-         :zen/tags #{zen/schema zen.fhir/structure-schema},
+ schema {:zen.fhir/version "0.6.28",
+         :zen/tags #{zen.fhir/extension
+                     zen/schema
+                     zen.fhir/structure-schema},
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse",
          :require #{:value},
          :type zen/map,

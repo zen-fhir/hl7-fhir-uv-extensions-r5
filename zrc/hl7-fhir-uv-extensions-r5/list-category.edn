@@ -1,8 +1,10 @@
 {ns hl7-fhir-uv-extensions-r5.list-category,
  import #{zen.fhir hl7-fhir-r5-core.CodeableConcept},
- schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+ schema {:zen/tags #{zen.fhir/extension
+                     zen/schema
+                     zen.fhir/structure-schema},
          :zen/desc "A categorization for the type of the list - helps for indexing and searching",
          :zen.fhir/type "CodeableConcept",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/list-category",
-         :zen.fhir/version "0.6.27",
+         :zen.fhir/version "0.6.28",
          :confirms #{hl7-fhir-r5-core.CodeableConcept/schema}}}

@@ -5,8 +5,10 @@
           hl7-fhir-r5-core.value-set.procedure-code
           hl7-fhir-r5-core.dateTime
           hl7-fhir-r5-core.Period},
- schema {:zen.fhir/version "0.6.27",
-         :zen/tags #{zen/schema zen.fhir/structure-schema},
+ schema {:zen.fhir/version "0.6.28",
+         :zen/tags #{zen.fhir/extension
+                     zen/schema
+                     zen.fhir/structure-schema},
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/biologicallyderivedproduct-manipulation",
          :require #{:time[x]},
          :type zen/map,

@@ -1,8 +1,10 @@
 {ns hl7-fhir-uv-extensions-r5.artifact-endorser,
  import #{zen.fhir hl7-fhir-r5-core.ContactDetail},
- schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+ schema {:zen/tags #{zen.fhir/extension
+                     zen/schema
+                     zen.fhir/structure-schema},
          :zen/desc "An individual or organization responsible for officially endorsing the {{title}} for use in some setting.",
          :zen.fhir/type "ContactDetail",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
-         :zen.fhir/version "0.6.27",
+         :zen.fhir/version "0.6.28",
          :confirms #{hl7-fhir-r5-core.ContactDetail/schema}}}

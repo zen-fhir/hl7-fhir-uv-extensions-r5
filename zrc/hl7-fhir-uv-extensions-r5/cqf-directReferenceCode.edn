@@ -1,8 +1,10 @@
 {ns hl7-fhir-uv-extensions-r5.cqf-directReferenceCode,
  import #{zen.fhir hl7-fhir-r5-core.Coding},
- schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+ schema {:zen/tags #{zen.fhir/extension
+                     zen/schema
+                     zen.fhir/structure-schema},
          :zen/desc "Defines a code directly referenced by artifact logic, as opposed to a value set. Direct reference codes may be the target of data requirements.",
          :zen.fhir/type "Coding",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
-         :zen.fhir/version "0.6.27",
+         :zen.fhir/version "0.6.28",
          :confirms #{hl7-fhir-r5-core.Coding/schema}}}

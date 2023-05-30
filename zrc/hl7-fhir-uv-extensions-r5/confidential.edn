@@ -4,8 +4,10 @@
           hl7-terminology-r5.value-set.v3-Confidentiality
           hl7-fhir-r5-core.uri},
  schema {:fhir/polymorphic true,
-         :zen.fhir/version "0.6.27",
-         :zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen.fhir/version "0.6.28",
+         :zen/tags #{zen.fhir/extension
+                     zen/schema
+                     zen.fhir/structure-schema},
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/confidential",
          :type zen/map,
          :zen/desc "Expresses the access policy associated with the element.",

@@ -1,8 +1,10 @@
 {ns hl7-fhir-uv-extensions-r5.device-lastmaintenancetime,
  import #{zen.fhir hl7-fhir-r5-core.dateTime},
- schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+ schema {:zen/tags #{zen.fhir/extension
+                     zen/schema
+                     zen.fhir/structure-schema},
          :zen/desc "DateTime of the last time the device was subject to maintenance.",
          :zen.fhir/type "dateTime",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/device-lastmaintenancetime",
-         :zen.fhir/version "0.6.27",
+         :zen.fhir/version "0.6.28",
          :confirms #{hl7-fhir-r5-core.dateTime/schema}}}

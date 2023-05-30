@@ -1,8 +1,10 @@
 {ns hl7-fhir-uv-extensions-r5.valueset-caseSensitive,
  import #{hl7-fhir-r5-core.boolean zen.fhir},
- schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+ schema {:zen/tags #{zen.fhir/extension
+                     zen/schema
+                     zen.fhir/structure-schema},
          :zen/desc "If this a case sensitive code.",
          :zen.fhir/type "boolean",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/valueset-caseSensitive",
-         :zen.fhir/version "0.6.27",
+         :zen.fhir/version "0.6.28",
          :confirms #{hl7-fhir-r5-core.boolean/schema}}}

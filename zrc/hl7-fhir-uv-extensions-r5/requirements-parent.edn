@@ -1,8 +1,10 @@
 {ns hl7-fhir-uv-extensions-r5.requirements-parent,
  import #{zen.fhir hl7-fhir-r5-core.canonical},
- schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+ schema {:zen/tags #{zen.fhir/extension
+                     zen/schema
+                     zen.fhir/structure-schema},
          :zen/desc "A larger/more generic set of requirements that this set of requirements helps to refine and enable.",
          :zen.fhir/type "canonical",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/requirements-parent",
-         :zen.fhir/version "0.6.27",
+         :zen.fhir/version "0.6.28",
          :confirms #{hl7-fhir-r5-core.canonical/schema}}}

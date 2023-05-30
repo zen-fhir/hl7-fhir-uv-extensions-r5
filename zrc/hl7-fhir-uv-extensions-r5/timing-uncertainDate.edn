@@ -1,8 +1,10 @@
 {ns hl7-fhir-uv-extensions-r5.timing-uncertainDate,
  import #{zen.fhir hl7-fhir-r5-core.Period},
- schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+ schema {:zen/tags #{zen.fhir/extension
+                     zen/schema
+                     zen.fhir/structure-schema},
          :zen/desc "When present, this extension indicates that the date of a period start or end is uncertain and falls within its own period.",
          :zen.fhir/type "Period",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/timing-uncertainDate",
-         :zen.fhir/version "0.6.27",
+         :zen.fhir/version "0.6.28",
          :confirms #{hl7-fhir-r5-core.Period/schema}}}

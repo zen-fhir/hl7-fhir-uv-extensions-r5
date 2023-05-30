@@ -1,8 +1,10 @@
 {ns hl7-fhir-uv-extensions-r5.extended-contact-availability,
  import #{zen.fhir hl7-fhir-r5-core.Availability},
- schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+ schema {:zen/tags #{zen.fhir/extension
+                     zen/schema
+                     zen.fhir/structure-schema},
          :zen/desc "The details provided in this contact may be used according to the attached availability guidelines.",
          :zen.fhir/type "Availability",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/extended-contact-availability",
-         :zen.fhir/version "0.6.27",
+         :zen.fhir/version "0.6.28",
          :confirms #{hl7-fhir-r5-core.Availability/schema}}}

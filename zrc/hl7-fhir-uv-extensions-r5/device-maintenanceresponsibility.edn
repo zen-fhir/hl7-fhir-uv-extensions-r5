@@ -3,10 +3,12 @@
           hl7-fhir-r5-core.Organization
           hl7-fhir-r5-core.Reference
           hl7-fhir-r5-core.Person},
- schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+ schema {:zen/tags #{zen.fhir/extension
+                     zen/schema
+                     zen.fhir/structure-schema},
          :zen/desc "Extension containing the information about the person and/or organization responsible for the maintenance of the device.",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/device-maintenanceresponsibility",
-         :zen.fhir/version "0.6.27",
+         :zen.fhir/version "0.6.28",
          :type zen/map,
          :keys {:person {:confirms #{hl7-fhir-r5-core.Reference/schema
                                      zen.fhir/Reference},

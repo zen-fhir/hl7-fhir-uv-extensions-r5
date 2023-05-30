@@ -4,11 +4,13 @@
           hl7-fhir-r5-core.Device
           hl7-fhir-r5-core.Organization
           hl7-fhir-r5-core.Person},
- schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+ schema {:zen/tags #{zen.fhir/extension
+                     zen/schema
+                     zen.fhir/structure-schema},
          :zen/desc "A reference to a Person, Group, Device, or Organization that is the contact.",
          :zen.fhir/type "Reference",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/cqf-contactReference",
-         :zen.fhir/version "0.6.27",
+         :zen.fhir/version "0.6.28",
          :confirms #{zen.fhir/Reference},
          :zen.fhir/reference {:refers #{hl7-fhir-r5-core.Organization/schema
                                         hl7-fhir-r5-core.Person/schema

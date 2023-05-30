@@ -1,8 +1,10 @@
 {ns hl7-fhir-uv-extensions-r5.artifact-useContext,
  import #{zen.fhir hl7-fhir-r5-core.UsageContext},
- schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+ schema {:zen/tags #{zen.fhir/extension
+                     zen/schema
+                     zen.fhir/structure-schema},
          :zen/desc "The content was developed with a focus and intent of supporting the contexts that are listed. These contexts may be general categories (gender, age, ...) or may be references to specific programs (insurance plans, studies, ...) and may be used to assist with indexing and searching for appropriate {{title}} instances.",
          :zen.fhir/type "UsageContext",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/artifact-useContext",
-         :zen.fhir/version "0.6.27",
+         :zen.fhir/version "0.6.28",
          :confirms #{hl7-fhir-r5-core.UsageContext/schema}}}

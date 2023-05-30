@@ -1,8 +1,10 @@
 {ns hl7-fhir-uv-extensions-r5.parameters-definition,
  import #{zen.fhir hl7-fhir-r5-core.ParameterDefinition},
- schema {:zen/tags #{zen/schema zen.fhir/structure-schema},
+ schema {:zen/tags #{zen.fhir/extension
+                     zen/schema
+                     zen.fhir/structure-schema},
          :zen/desc "This specifies the definition for a parameter if needed. This is useful for communicating the type of a parameter when the parameter has no value.",
          :zen.fhir/type "ParameterDefinition",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/parameters-definition",
-         :zen.fhir/version "0.6.27",
+         :zen.fhir/version "0.6.28",
          :confirms #{hl7-fhir-r5-core.ParameterDefinition/schema}}}
