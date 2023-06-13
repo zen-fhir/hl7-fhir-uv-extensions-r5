@@ -5,7 +5,7 @@
           hl7-fhir-r5-core.value-set.procedure-code
           hl7-fhir-r5-core.dateTime
           hl7-fhir-r5-core.Period},
- schema {:zen.fhir/version "0.6.28",
+ schema {:zen.fhir/version "0.6.29",
          :zen/tags #{zen.fhir/extension
                      zen/schema
                      zen.fhir/structure-schema},

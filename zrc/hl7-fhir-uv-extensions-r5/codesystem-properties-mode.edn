@@ -8,7 +8,7 @@
          :zen/desc "The extent to which the properties of the code system (including the filters) are represented in this resource instance.",
          :zen.fhir/type "code",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/codesystem-properties-mode",
-         :zen.fhir/version "0.6.28",
+         :zen.fhir/version "0.6.29",
          :confirms #{hl7-fhir-r5-core.code/schema},
          :zen.fhir/value-set {:symbol hl7-fhir-uv-extensions-r5.value-set.codesystem-properties-mode/value-set,
                               :strength :required}}}

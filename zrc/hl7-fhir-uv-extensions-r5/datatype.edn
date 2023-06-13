@@ -6,5 +6,5 @@
          :zen/desc "Used when the actual type is not allowed by the definition of the element. In general, this should only arise when wrangling between versions using cross-version extensions - see [Cross Version Extensions](versions.html#extensions).",
          :zen.fhir/type "string",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/_datatype",
-         :zen.fhir/version "0.6.28",
+         :zen.fhir/version "0.6.29",
          :confirms #{hl7-fhir-r5-core.string/schema}}}

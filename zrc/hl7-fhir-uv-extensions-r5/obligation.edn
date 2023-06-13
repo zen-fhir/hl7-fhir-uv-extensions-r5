@@ -7,7 +7,7 @@
           hl7-fhir-r5-core.canonical
           hl7-fhir-r5-core.Coding
           hl7-fhir-r5-core.uri},
- schema {:zen.fhir/version "0.6.28",
+ schema {:zen.fhir/version "0.6.29",
          :zen/tags #{zen.fhir/extension
                      zen/schema
                      zen.fhir/structure-schema},

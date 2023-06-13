@@ -6,5 +6,5 @@
          :zen/desc "Documents the 'knowledge artifacts' relevant to the base resource such as citations, supporting evidence, documentation of processes, caveats around testing methodology.",
          :zen.fhir/type "RelatedArtifact",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
-         :zen.fhir/version "0.6.28",
+         :zen.fhir/version "0.6.29",
          :confirms #{hl7-fhir-r5-core.RelatedArtifact/schema}}}

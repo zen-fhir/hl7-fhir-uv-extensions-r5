@@ -6,5 +6,5 @@
          :zen/desc "Asserts that instances that are valid against this profile are also automatically valid against the StructureDefinition referenced by this extension.",
          :zen.fhir/type "canonical",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile",
-         :zen.fhir/version "0.6.28",
+         :zen.fhir/version "0.6.29",
          :confirms #{hl7-fhir-r5-core.canonical/schema}}}

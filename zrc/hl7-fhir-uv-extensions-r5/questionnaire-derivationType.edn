@@ -8,7 +8,7 @@
          :zen/desc "Provides more precision about the type of derivation relationship that exists.",
          :zen.fhir/type "CodeableConcept",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/questionnaire-derivationType",
-         :zen.fhir/version "0.6.28",
+         :zen.fhir/version "0.6.29",
          :confirms #{hl7-fhir-r5-core.CodeableConcept/schema},
          :zen.fhir/value-set {:symbol hl7-fhir-uv-extensions-r5.value-set.questionnaire-derivationType/value-set,
                               :strength :extensible}}}
