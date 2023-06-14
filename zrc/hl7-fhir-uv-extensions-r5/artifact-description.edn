@@ -6,5 +6,5 @@
          :zen/desc "A free text natural language description of the {{title}} from a consumer's perspective.",
          :zen.fhir/type "markdown",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/artifact-description",
-         :zen.fhir/version "0.6.29",
+         :zen.fhir/version "0.6.29-22",
          :confirms #{hl7-fhir-r5-core.markdown/schema}}}

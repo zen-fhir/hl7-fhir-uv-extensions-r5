@@ -6,6 +6,6 @@
          :zen/desc "Extension for the collection procedure of a biologically dervied product",
          :zen.fhir/type "Reference",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/biologicallyderivedproduct-collection-procedure",
-         :zen.fhir/version "0.6.29",
+         :zen.fhir/version "0.6.29-22",
          :confirms #{zen.fhir/Reference},
          :zen.fhir/reference {:refers #{hl7-fhir-r5-core.Procedure/schema}}}}

@@ -1,6 +1,6 @@
 {ns hl7-fhir-uv-extensions-r5.timing-daysOfCycle,
  import #{zen.fhir hl7-fhir-r5-core.integer},
- schema {:zen.fhir/version "0.6.29",
+ schema {:zen.fhir/version "0.6.29-22",
          :zen/tags #{zen.fhir/extension
                      zen/schema
                      zen.fhir/structure-schema},

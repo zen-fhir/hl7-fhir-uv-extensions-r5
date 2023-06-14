@@ -4,7 +4,7 @@
           hl7-fhir-r5-core.CodeableConcept
           hl7-fhir-r5-core.string
           hl7-fhir-r5-core.Period},
- schema {:zen.fhir/version "0.6.29",
+ schema {:zen.fhir/version "0.6.29-22",
          :zen/tags #{zen.fhir/extension
                      zen/schema
                      zen.fhir/structure-schema},
