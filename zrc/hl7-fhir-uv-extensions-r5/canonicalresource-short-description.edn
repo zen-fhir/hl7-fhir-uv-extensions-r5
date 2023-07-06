@@ -6,5 +6,5 @@
          :zen/desc "A single paragraph plain string short description alternative to CanonicalResource.description for display in lists etc.",
          :zen.fhir/type "string",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/canonicalresource-short-description",
-         :zen.fhir/version "0.6.29-22",
+         :zen.fhir/version "0.6.29-4",
          :confirms #{hl7-fhir-r5-core.string/schema}}}

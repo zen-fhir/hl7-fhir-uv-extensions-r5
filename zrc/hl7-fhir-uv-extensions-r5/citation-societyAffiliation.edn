@@ -6,5 +6,5 @@
          :zen/desc "A society affiliation for the venue (publication form) that the cited artifact is cited in.",
          :zen.fhir/type "string",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/citation-societyAffiliation",
-         :zen.fhir/version "0.6.29-22",
+         :zen.fhir/version "0.6.29-4",
          :confirms #{hl7-fhir-r5-core.string/schema}}}

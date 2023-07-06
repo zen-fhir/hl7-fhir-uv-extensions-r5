@@ -4,7 +4,7 @@
           hl7-fhir-uv-extensions-r5.value-set.animal-breeds
           hl7-fhir-uv-extensions-r5.value-set.animal-genderstatus
           hl7-fhir-uv-extensions-r5.value-set.animal-species},
- schema {:zen.fhir/version "0.6.29-22",
+ schema {:zen.fhir/version "0.6.29-4",
          :zen/tags #{zen.fhir/extension
                      zen/schema
                      zen.fhir/structure-schema},

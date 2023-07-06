@@ -1,7 +1,7 @@
 {ns hl7-fhir-uv-extensions-r5.elementdefinition-maxValueSet,
  import #{zen.fhir hl7-fhir-r5-core.canonical hl7-fhir-r5-core.uri},
  schema {:fhir/polymorphic true,
-         :zen.fhir/version "0.6.29-22",
+         :zen.fhir/version "0.6.29-4",
          :zen/tags #{zen.fhir/extension
                      zen/schema
                      zen.fhir/structure-schema},

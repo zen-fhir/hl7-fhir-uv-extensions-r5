@@ -6,5 +6,5 @@
          :zen/desc "An individual or organization primarily responsible for review of some aspect of the {{title}}.",
          :zen.fhir/type "ContactDetail",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
-         :zen.fhir/version "0.6.29-22",
+         :zen.fhir/version "0.6.29-4",
          :confirms #{hl7-fhir-r5-core.ContactDetail/schema}}}

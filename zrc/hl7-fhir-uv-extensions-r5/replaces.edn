@@ -6,5 +6,5 @@
          :zen/desc "This indicates a separate conformance resource instance that is superseded by the current instance.",
          :zen.fhir/type "canonical",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/replaces",
-         :zen.fhir/version "0.6.29-22",
+         :zen.fhir/version "0.6.29-4",
          :confirms #{hl7-fhir-r5-core.canonical/schema}}}

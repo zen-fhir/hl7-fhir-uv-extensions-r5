@@ -6,5 +6,5 @@
          :zen/desc "Specifies the duration of the period, based on the starting date, rather than specifying the end date of the period.",
          :zen.fhir/type "Duration",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/artifact-periodDuration",
-         :zen.fhir/version "0.6.29-22",
+         :zen.fhir/version "0.6.29-4",
          :confirms #{hl7-fhir-r5-core.Duration/schema}}}

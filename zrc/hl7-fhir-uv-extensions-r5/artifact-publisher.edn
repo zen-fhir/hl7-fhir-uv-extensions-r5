@@ -6,5 +6,5 @@
          :zen/desc "The name of the organization or individual responsible for the release and ongoing maintenance of the {{title}}.",
          :zen.fhir/type "string",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/artifact-publisher",
-         :zen.fhir/version "0.6.29-22",
+         :zen.fhir/version "0.6.29-4",
          :confirms #{hl7-fhir-r5-core.string/schema}}}
