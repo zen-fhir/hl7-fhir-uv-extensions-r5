@@ -4,7 +4,7 @@
           hl7-fhir-r5-core.Reference
           hl7-fhir-uv-extensions-r5.value-set.goal-relationship-type
           hl7-fhir-r5-core.Goal},
- schema {:zen.fhir/version "0.6.29-4",
+ schema {:zen.fhir/version "0.6.30",
          :zen/tags #{zen.fhir/extension
                      zen/schema
                      zen.fhir/structure-schema},

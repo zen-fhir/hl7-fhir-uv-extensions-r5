@@ -8,7 +8,7 @@
           hl7-fhir-r5-core.code
           hl7-fhir-r5-core.RelatedPerson
           hl7-fhir-r5-core.Patient},
- schema {:zen.fhir/version "0.6.29-4",
+ schema {:zen.fhir/version "0.6.30",
          :zen/tags #{zen.fhir/extension
                      zen/schema
                      zen.fhir/structure-schema},

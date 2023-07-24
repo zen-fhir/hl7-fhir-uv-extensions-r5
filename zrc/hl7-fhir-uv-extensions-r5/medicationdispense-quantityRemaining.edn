@@ -6,5 +6,5 @@
          :zen/desc "The quanity left to be dispensed after a dispensing event.",
          :zen.fhir/type "Quantity",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/medicationdispense-quantityRemaining",
-         :zen.fhir/version "0.6.29-4",
+         :zen.fhir/version "0.6.30",
          :confirms #{hl7-fhir-r5-core.Quantity/schema}}}

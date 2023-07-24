@@ -6,5 +6,5 @@
          :zen/desc "An individiual or organization primarily involved in the creation and maintenance of the {{title}}.",
          :zen.fhir/type "ContactDetail",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/artifact-author",
-         :zen.fhir/version "0.6.29-4",
+         :zen.fhir/version "0.6.30",
          :confirms #{hl7-fhir-r5-core.ContactDetail/schema}}}

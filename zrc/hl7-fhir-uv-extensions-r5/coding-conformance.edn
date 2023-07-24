@@ -6,5 +6,5 @@
          :zen/desc "Declares a profile that required the specific coding to be included in a list of Codings because of the binding. This allows reading applications to identify particular codings without processing the systems.",
          :zen.fhir/type "canonical",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/coding-conformance",
-         :zen.fhir/version "0.6.29-4",
+         :zen.fhir/version "0.6.30",
          :confirms #{hl7-fhir-r5-core.canonical/schema}}}

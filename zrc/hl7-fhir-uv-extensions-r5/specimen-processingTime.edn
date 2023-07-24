@@ -1,7 +1,7 @@
 {ns hl7-fhir-uv-extensions-r5.specimen-processingTime,
  import #{zen.fhir hl7-fhir-r5-core.Period hl7-fhir-r5-core.Duration},
  schema {:fhir/polymorphic true,
-         :zen.fhir/version "0.6.29-4",
+         :zen.fhir/version "0.6.30",
          :zen/tags #{zen.fhir/extension
                      zen/schema
                      zen.fhir/structure-schema},

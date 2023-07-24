@@ -8,7 +8,7 @@
                      zen.fhir/structure-schema},
          :zen/desc "Extension containing the information about the person and/or organization responsible for the maintenance of the device.",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/device-maintenanceresponsibility",
-         :zen.fhir/version "0.6.29-4",
+         :zen.fhir/version "0.6.30",
          :type zen/map,
          :keys {:person {:confirms #{hl7-fhir-r5-core.Reference/schema
                                      zen.fhir/Reference},
