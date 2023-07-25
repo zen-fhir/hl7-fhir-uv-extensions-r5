@@ -4,7 +4,7 @@
           hl7-fhir-r5-core.FamilyMemberHistory
           hl7-fhir-r5-core.Reference
           hl7-fhir-uv-extensions-r5.value-set.sibling-relationship-codes},
- schema {:zen.fhir/version "0.6.30",
+ schema {:zen.fhir/version "0.6.30-1",
          :zen/tags #{zen.fhir/extension
                      zen/schema
                      zen.fhir/structure-schema},
