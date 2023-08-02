@@ -6,5 +6,5 @@
          :zen/desc "User who created the compose for the ValueSet.",
          :zen.fhir/type "string",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/valueset-compose-createdBy",
-         :zen.fhir/version "0.6.30-1",
+         :zen.fhir/version "0.6.30-7",
          :confirms #{hl7-fhir-r5-core.string/schema}}}

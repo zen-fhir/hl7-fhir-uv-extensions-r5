@@ -8,7 +8,7 @@
          :zen/desc "Descriptive topics related to the content of the artifact. Topics provide a high-level categorization of the artifact that can be useful for filtering and searching.",
          :zen.fhir/type "CodeableConcept",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/artifact-topic",
-         :zen.fhir/version "0.6.30-1",
+         :zen.fhir/version "0.6.30-7",
          :confirms #{hl7-fhir-r5-core.CodeableConcept/schema},
          :zen.fhir/value-set {:symbol hl7-fhir-r5-core.value-set.definition-topic/value-set,
                               :strength :example}}}

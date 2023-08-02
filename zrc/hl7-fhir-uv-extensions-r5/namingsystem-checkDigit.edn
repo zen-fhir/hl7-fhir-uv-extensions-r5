@@ -6,5 +6,5 @@
          :zen/desc "allow for a check digit and a check digit scheme to be conveyed as part of Naming System.    The rules of the ID Type determine if the check digit is part of the ID value or sent    separately.",
          :zen.fhir/type "string",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/namingsystem-checkDigit",
-         :zen.fhir/version "0.6.30-1",
+         :zen.fhir/version "0.6.30-7",
          :confirms #{hl7-fhir-r5-core.string/schema}}}

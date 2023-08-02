@@ -5,7 +5,7 @@
           hl7-fhir-r5-core.code
           hl7-fhir-uv-extensions-r5.value-set.artifact-comment-type
           hl7-fhir-r5-core.uri},
- schema {:zen.fhir/version "0.6.30-1",
+ schema {:zen.fhir/version "0.6.30-7",
          :zen/tags #{zen.fhir/extension
                      zen/schema
                      zen.fhir/structure-schema},

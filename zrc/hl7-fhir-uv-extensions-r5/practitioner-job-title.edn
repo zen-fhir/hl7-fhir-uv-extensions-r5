@@ -8,7 +8,7 @@
          :zen/desc "The job title may be independent of the role.  For example, a surgeon (role) may have a title of Head of Surgery.  Some titles may overlap with roles and could be represented as discrete PractitionerRoles, but some titles may be independent of role.",
          :zen.fhir/type "CodeableConcept",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/practitioner-job-title",
-         :zen.fhir/version "0.6.30-1",
+         :zen.fhir/version "0.6.30-7",
          :confirms #{hl7-fhir-r5-core.CodeableConcept/schema},
          :zen.fhir/value-set {:symbol hl7-fhir-uv-extensions-r5.value-set.practitioner-job-title/value-set,
                               :strength :example}}}
