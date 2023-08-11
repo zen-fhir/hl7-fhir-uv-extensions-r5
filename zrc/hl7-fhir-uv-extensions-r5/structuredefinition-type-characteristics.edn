@@ -8,7 +8,7 @@
          :zen/desc "A code that indicates that a particular type characteristic and it's associated element definition aspects apply to this type",
          :zen.fhir/type "code",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
-         :zen.fhir/version "0.6.30-7",
+         :zen.fhir/version "0.6.30-14",
          :confirms #{hl7-fhir-r5-core.code/schema},
          :zen.fhir/value-set {:symbol hl7-fhir-uv-extensions-r5.value-set.type-characteristics-code/value-set,
                               :strength :required}}}

@@ -6,5 +6,5 @@
          :zen/desc "Indicates that the reference has a  particular focus in the target resource, a particular element of interest, identified by a FHIRPath statement. The FHIRPath expression is limited to a the [simple subset](fhirpath.html#simple) with the additional limitation that .resolve() that is not allowed.",
          :zen.fhir/type "string",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/targetPath",
-         :zen.fhir/version "0.6.30-7",
+         :zen.fhir/version "0.6.30-14",
          :confirms #{hl7-fhir-r5-core.string/schema}}}

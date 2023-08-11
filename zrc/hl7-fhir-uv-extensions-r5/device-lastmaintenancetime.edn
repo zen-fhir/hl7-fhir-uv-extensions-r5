@@ -6,5 +6,5 @@
          :zen/desc "DateTime of the last time the device was subject to maintenance.",
          :zen.fhir/type "dateTime",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/device-lastmaintenancetime",
-         :zen.fhir/version "0.6.30-7",
+         :zen.fhir/version "0.6.30-14",
          :confirms #{hl7-fhir-r5-core.dateTime/schema}}}

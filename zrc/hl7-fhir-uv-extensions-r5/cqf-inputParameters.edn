@@ -6,6 +6,6 @@
          :zen/desc "Specifies the input parameters to the operation (such as a test case description or a data requirements or evaluate operation).",
          :zen.fhir/type "Reference",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/cqf-inputParameters",
-         :zen.fhir/version "0.6.30-7",
+         :zen.fhir/version "0.6.30-14",
          :confirms #{zen.fhir/Reference},
          :zen.fhir/reference {:refers #{hl7-fhir-r5-core.Parameters/schema}}}}
