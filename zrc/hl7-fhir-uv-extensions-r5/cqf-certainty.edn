@@ -10,7 +10,7 @@
                      zen.fhir/structure-schema},
          :zen/desc "An assessment of certainty, confidence, or quality of the item on which it appears.",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/cqf-certainty",
-         :zen.fhir/version "0.6.30-14",
+         :zen.fhir/version "0.6.31",
          :type zen/map,
          :keys {:description {:confirms #{hl7-fhir-r5-core.string/schema},
                               :zen/desc "Textual description of certainty"},

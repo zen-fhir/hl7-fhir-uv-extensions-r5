@@ -3,7 +3,7 @@
           hl7-fhir-r5-core.string
           hl7-fhir-r5-core.code
           hl7-fhir-r5-core.value-set.languages},
- schema {:zen.fhir/version "0.6.30-14",
+ schema {:zen.fhir/version "0.6.31",
          :zen/tags #{zen.fhir/extension
                      zen/schema
                      zen.fhir/structure-schema},
