@@ -8,7 +8,7 @@
           hl7-fhir-uv-extensions-r5.value-set.recorded-sex-or-gender-type
           hl7-fhir-r5-core.dateTime
           hl7-fhir-r5-core.Period},
- schema {:zen.fhir/version "0.6.31",
+ schema {:zen.fhir/version "0.6.32",
          :zen/tags #{zen.fhir/extension
                      zen/schema
                      zen.fhir/structure-schema},

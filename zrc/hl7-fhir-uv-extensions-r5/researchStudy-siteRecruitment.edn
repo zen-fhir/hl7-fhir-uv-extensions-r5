@@ -7,7 +7,7 @@
                      zen.fhir/structure-schema},
          :zen/desc "Target and actual numbers of sites for a study.",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/researchStudy-siteRecruitment",
-         :zen.fhir/version "0.6.31",
+         :zen.fhir/version "0.6.32",
          :type zen/map,
          :keys {:targetNumber {:confirms #{hl7-fhir-r5-core.unsignedInt/schema},
                                :zen/desc "The desired number of sites"},

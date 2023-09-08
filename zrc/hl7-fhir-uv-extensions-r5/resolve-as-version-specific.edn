@@ -6,5 +6,5 @@
          :zen/desc "If true, indicates that the reference should be resolved to a version-specific reference rather than a version-agnostic reference.",
          :zen.fhir/type "boolean",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/resolve-as-version-specific",
-         :zen.fhir/version "0.6.31",
+         :zen.fhir/version "0.6.32",
          :confirms #{hl7-fhir-r5-core.boolean/schema}}}

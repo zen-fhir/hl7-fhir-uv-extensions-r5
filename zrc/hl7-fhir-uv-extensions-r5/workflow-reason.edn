@@ -8,7 +8,7 @@
          :zen/desc "References a resource or provides a code or text that explains why this event occurred or request was created.",
          :zen.fhir/type "CodeableReference",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/workflow-reason",
-         :zen.fhir/version "0.6.31",
+         :zen.fhir/version "0.6.32",
          :confirms #{hl7-fhir-r5-core.CodeableReference/schema},
          :zen.fhir/value-set {:symbol hl7-fhir-uv-extensions-r5.value-set.condition-cause/value-set,
                               :strength :example}}}
