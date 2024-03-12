@@ -9,7 +9,7 @@
           hl7-fhir-r5-core.MedicationAdministration
           hl7-fhir-r5-core.Immunization},
  schema {:fhir/polymorphic true,
-         :zen.fhir/version "0.6.32",
+         :zen.fhir/version "0.6.42",
          :zen/tags #{zen.fhir/extension
                      zen/schema
                      zen.fhir/structure-schema},

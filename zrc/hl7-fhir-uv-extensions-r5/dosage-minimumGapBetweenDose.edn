@@ -14,7 +14,7 @@
                      zen.fhir/structure-schema},
          :zen/desc "The minimum amount of time that must pass between administering the specified dose amount.",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/dosage-minimumGapBetweenDose",
-         :zen.fhir/version "0.6.32",
+         :zen.fhir/version "0.6.42",
          :type zen/map,
          :keys {:meetGoal {:type zen/vector,
                            :every {:confirms #{hl7-fhir-r5-core.Extension/schema},

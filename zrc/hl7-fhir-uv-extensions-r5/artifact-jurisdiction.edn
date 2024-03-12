@@ -8,7 +8,7 @@
          :zen/desc "A legal or geographic region in which the {{title}} is intended to be used.",
          :zen.fhir/type "CodeableConcept",
          :zen.fhir/profileUri "http://hl7.org/fhir/StructureDefinition/artifact-jurisdiction",
-         :zen.fhir/version "0.6.32",
+         :zen.fhir/version "0.6.42",
          :confirms #{hl7-fhir-r5-core.CodeableConcept/schema},
          :zen.fhir/value-set {:symbol hl7-fhir-r5-core.value-set.jurisdiction/value-set,
                               :strength :extensible}}}
